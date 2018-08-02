@@ -24,7 +24,7 @@ CREATE TABLE `adminlog` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `adminlog`
+-- Inserting data for table `adminlog`
 --
 
 INSERT INTO `adminlog` (`username`, `password`) VALUES
@@ -45,14 +45,14 @@ CREATE TABLE `cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `cart`
+-- Inserting data for table `cart`
 --
 
 INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES
 (18, 1, '::1', 1, 1),
 (19, 2, '::1', 1, 1),
-(20, 1, '127.0.0.1', -1, 1),
-(21, 2, '127.0.0.1', -1, 1);
+(20, 1, '127.0.0.1', -1, 1);
+
 
 -- --------------------------------------------------------
 
@@ -68,17 +68,17 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `categories`
+-- Inserting data for table `categories`
 --
 
 INSERT INTO `categories` (`cat_id`, `cat_title`, `creationDate`, `updationDate`) VALUES
-(1, 'Fruit', '2017-11-14 15:38:07', '0000-00-00 00:00:00'),
-(2, 'Vegetable', '2017-11-14 15:38:07', '0000-00-00 00:00:00'),
-(3, 'Gift Basket', '2017-11-14 15:38:07', '0000-00-00 00:00:00'),
-(4, 'Dairy', '2017-11-14 15:38:07', '0000-00-00 00:00:00'),
-(5, 'Baverage', '2017-11-14 15:38:07', '0000-00-00 00:00:00'),
-(6, 'Offers', '2017-11-14 15:38:07', '0000-00-00 00:00:00'),
-(7, 'Packages', '2017-11-14 15:38:07', '0000-00-00 00:00:00');
+(1, 'Fruit', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
+(2, 'Vegetable', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
+(3, 'Gift Basket', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
+(4, 'Dairy', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
+(5, 'Baverage', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
+(6, 'Offers', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
+(7, 'Packages', '2018-07-24 15:38:07', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `orders`
+-- Inserting data for table `orders`
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_status`) VALUES
@@ -104,8 +104,6 @@ INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_s
 (23, 3, 4, 1, '3', 'Completed'),
 (24, 3, 15, 1, '3', 'Completed'),
 (25, 3, 56, 1, '3', 'Completed'),
-(26, 3, 51, 1, '3', 'Completed'),
-(27, 3, 69, 1, '3', 'Completed'),
 (28, 3, 8, 1, '3', 'Completed');
 
 
@@ -126,7 +124,7 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `products`
+-- Inserting data for table `products`
 --
 
 INSERT INTO `products` (`product_id`, `product_cat`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
@@ -201,7 +199,7 @@ CREATE TABLE `user_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user_info`
+-- Inserting data for table `user_info`
 --
 
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
@@ -209,7 +207,7 @@ INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `passwor
 (2, 'm', 'mm', 'mayesha@gmail.com', '123456', '1234567890', 'dhaka', 'dhaka');
 
 --
--- Indexes for dumped tables
+-- Primary Key Indexes for tables
 --
 
 --
@@ -243,7 +241,7 @@ ALTER TABLE `user_info`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT for tables
 --
 
 
