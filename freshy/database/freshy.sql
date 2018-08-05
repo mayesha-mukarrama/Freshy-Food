@@ -9,7 +9,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `freshy`
+-- Database: `freshy - Online Fresh Food Ordering System`
 --
 
 -- --------------------------------------------------------
@@ -51,7 +51,7 @@ CREATE TABLE `cart` (
 INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES
 (18, 1, '::1', 1, 1),
 (19, 2, '::1', 1, 1),
-(20, 1, '127.0.0.1', -1, 1);
+(20, 1, '127.0.0.1', 1, 1);
 
 
 -- --------------------------------------------------------
@@ -100,11 +100,11 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_status`) VALUES
-(22, 3, 1, 1, '3', 'Completed'),
-(23, 3, 4, 1, '3', 'Completed'),
-(24, 3, 15, 1, '3', 'Completed'),
-(25, 3, 56, 1, '3', 'Completed'),
-(28, 3, 8, 1, '3', 'Completed');
+(2, 3, 1, 1, '3', 'Completed'),
+(3, 3, 4, 1, '3', 'Completed'),
+(4, 3, 15, 1, '3', 'Completed'),
+(5, 3, 32, 1, '3', 'Completed'),
+(6, 3, 8, 1, '3', 'Completed');
 
 
 -- --------------------------------------------------------
