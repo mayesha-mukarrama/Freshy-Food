@@ -9,7 +9,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `freshy - Online Fresh Food Ordering System`
+-- Database: `freshyFood`
 --
 
 -- --------------------------------------------------------
@@ -100,11 +100,11 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_status`) VALUES
-(2, 3, 1, 1, '3', 'Completed'),
-(3, 3, 4, 1, '3', 'Completed'),
-(4, 3, 15, 1, '3', 'Completed'),
-(5, 3, 32, 1, '3', 'Completed'),
-(6, 3, 8, 1, '3', 'Completed');
+(22, 3, 1, 1, '3', 'Completed'),
+(23, 3, 4, 1, '3', 'Completed'),
+(24, 3, 15, 1, '3', 'Completed'),
+(25, 3, 36, 1, '3', 'Completed'),
+(28, 3, 8, 1, '3', 'Completed');
 
 
 -- --------------------------------------------------------
@@ -128,27 +128,27 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_id`, `product_cat`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
-(1, 1, 'Mango 1kg', 60, 'Mango ', 'mango.jpg', 'mango'),
-(2, 1, 'lychee 100pcs', 500, 'Lychee', 'lychee.jpeg', 'lychee'),
-(3, 1, 'Apple 1kg', 120, 'Apple', 'apple.jpg', 'apple'),
-(4, 1, 'Banana 12pcs', 65, 'Banana ', 'banana.jpg', 'banana'),
-(5, 2, 'Carrot 1kg', 35, 'Carrot', 'carrot.jpg', 'carrot'),
-(6, 2, 'Lemon 4pcs', 20, 'Lemon', 'lemon.jpg', 'lemon '),
-(7, 2, 'Aloe vera 4pcs', 30, 'Aloe vera', 'aloe.png', 'aloe vera'),
-(8, 2, 'Onion 1kg', 40, 'Onion', 'onion.jpg', 'onion'),
-(9, 3, 'Mango Basket', 1200, 'Mango Basket', 'mango basket.jpg', 'mango basket'),
-(10, 3, 'Fruits basket', 1000, 'Fruits basket', 'fruits basket.jpg', 'basket '),
-(11, 3, 'Regular Fruits basket', 1600, 'Regular Fruits basket', 'regular.png', 'basket'),
-(12, 4, 'Organic ghee 350gm', 450, 'Organic ghee', 'ghee.jpg', 'organic ghee'),
-(13, 4, 'Fresh Milk 1L', 70, 'Fresh Milk', 'milk.jpg', 'fresh milk'),
-(14, 4, 'Organic Honey 250gm', 500, 'Organic Honey', 'honey.jpg', 'organic honey'),
-(15, 4, 'Yogurt 500gm', 70, 'Yogurt', 'yogurt.jpg', 'Yogurt'),
-(16, 5, 'Orange Juice 1L', 600, 'Orange Juice', 'orange juice.jpg', 'orange juice'),
-(17, 5, 'Mango juice 1L', 1000, 'Mango juice', 'mango juice.jpg', 'mango juice'),
-(19, 5, 'Green Coconut 1pcs', 60, 'Green Coconut', 'coconut water.jpg', 'coconut water'),
-(20, 6, 'Special offer', 1600, 'Special offer', 'offer.jpg', 'offer'),
-(21, 6, 'Buy 5kg mango get 1kg free', 300, 'Buy 5kg mango get 1kg free', 'mango.jpg', 'mango'),
-(22, 6, 'Buy 6kg apple get 1kg free ', 720, 'Buy 6kg apple get 1kg free', 'apple.jpg', 'apple'),
+(1, 1, 'Mango', 60, '1kg ', 'mango.jpg', 'mango'),
+(2, 1, 'lychee', 500, ' 100pcs', 'lychee.jpeg', 'lychee'),
+(3, 1, 'Apple', 120, ' 1kg', 'apple.jpg', 'apple'),
+(4, 1, 'Banana ', 65, '12pcs ', 'banana.jpg', 'banana'),
+(5, 2, 'Carrot ', 35, '1kg', 'carrot.jpg', 'carrot'),
+(6, 2, 'Lemon ', 20, '4pcs', 'lemon.jpg', 'lemon '),
+(7, 2, 'Aloe vera ', 30, '4pcs', 'aloe.png', 'aloe vera'),
+(8, 2, 'Onion ', 40, '1kg', 'onion.jpg', 'onion'),
+(9, 3, 'Mango Basket', 1200, '5kg Himsagar Mango', 'mango basket.jpg', 'mango basket'),
+(10, 3, 'Fruits basket', 1000, '5 apple, 12 banana, .5kg grape', 'fruits basket.jpg', 'basket '),
+(11, 3, 'Regular Fruits basket', 1600, '2 apple, 2 pineapple, .5kg grape', 'regular.png', 'basket'),
+(12, 4, 'Organic ghee', 450, ' 350gm', 'ghee.jpg', 'organic ghee'),
+(13, 4, 'Fresh Milk', 70, ' 1L', 'milk.jpg', 'fresh milk'),
+(14, 4, 'Organic Honey', 500, ' 250gm', 'honey.jpg', 'organic honey'),
+(15, 4, 'Yogurt ', 70, '500gm', 'yogurt.jpg', 'Yogurt'),
+(16, 5, 'Orange Juice', 600, ' 1L', 'orange juice.jpg', 'orange juice'),
+(17, 5, 'Mango juice', 1000, ' 1L', 'mango juice.jpg', 'mango juice'),
+(19, 5, 'Green Coconut ', 60, '1pcs', 'coconut water.jpg', 'coconut water'),
+(20, 6, 'Special offer', 1200, '25% off in 25 kg mangoes', 'offer.jpg', 'offer'),
+(21, 6, 'Rajshahi Mango', 300, 'Buy 5kg mango get 1kg free', 'mango.jpg', 'mango'),
+(22, 6, 'Apple', 720, 'Buy 6kg apple get 1kg free', 'apple.jpg', 'apple'),
 (23, 7, 'Fruit packages', 1750, 'Fruit packages', 'fruit.jpg', 'fruit'),
 (24, 7, 'Kids packages', 1850, 'Kids packages', 'kids.jpg', 'fruit'),
 (25, 7, 'wedding packages', 1550, 'wedding packages', 'wedding.jpg', 'fruit'),
