@@ -10,7 +10,7 @@ if(isset($_SESSION["uid"])){
 		<meta charset="UTF-8">
 		<title>FreshyFood</title>
 		<link rel="stylesheet" href="w3.css">
-		
+		<link rel="shortcut icon" href="freshyFood.ico">
 
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
@@ -20,7 +20,7 @@ if(isset($_SESSION["uid"])){
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="slider_css_js/swiper.min.css">
 		
-		<link rel="shortcut icon" href="freshyFood.ico">
+		
 		
 		
 <!--------------------------------------------------------------------------------------------------->
@@ -378,7 +378,6 @@ $(document).ready(function(){
 				<div class="panel-footer">
 				
 				
-				
   <ul style="list-style-type:none" >
   <center>
   <li><style="text-decoration:none"><h4>Our Services:</h4></li>
@@ -392,7 +391,7 @@ $(document).ready(function(){
   </center>
   </div>
   <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
-
+</div>
 
 <!-------------------------------------------------------------------------------------------->
 				<!--<div class="card">
