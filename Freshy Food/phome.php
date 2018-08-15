@@ -84,19 +84,16 @@ return false;
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="#"><span class="glyphicon glyphicon-modal-window"></span>&nbsp;AboutUs</a></li>
-				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>
+				 
 				<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
 				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Search</button></li>
 			</ul>
-			<!--<form class="navbar-form navbar-left">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search" id="search">
-		        </div>
-		        <button type="submit" class="btn btn-primary" id="search_btn"><span class="glyphicon glyphicon-search"></span></button>
-		     </form>-->
+			
 			<ul class="nav navbar-nav navbar-right">
-			<li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;ContactUs</a></li>
+			 
+			    <li><a href="#">&nbsp;En | বাং</a></li>
+				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
+			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
@@ -163,8 +160,7 @@ return false;
 					<li><a href="#">Categories</a></li>
 					<li><a href="#">Categories</a></li>
 				</div> -->
-				<div id="get_brand">
-				</div>
+				
 				<!--<div class="nav nav-pills nav-stacked">
 					<li class="active"><a href="#"><h4>Brand</h4></a></li>
 					<li><a href="#">Categories</a></li>
@@ -208,18 +204,23 @@ return false;
 		</div>
 		<div class="card">
 				<div class="panel-footer">
+				
+				
   <ul style="list-style-type:none" >
-  <li style="float:left"><a href="#" style="text-decoration:none">POPULAR CATEGORIES:</a></li>
-  <li>&nbsp;&nbsp;&nbsp;&nbsp;Fruit , VegetableGift , Basket , Dairy , Baverage , Offers , Packages</li>
+  <center>
+  <li><style="text-decoration:none"><h4>Our Services:</h4></li>
+  <li><a href="about_us.php" style="text-decoration:none">Live formalin dectation</a></li></li>
+  <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
+  <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="#" style="text-decoration:none">About Us</a></li></li>
   </br>
-  <li style="float:left"><a href="#" style="text-decoration:none">CITIES WE SERVE:</a></li>
-  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mirpur, Dhanmondi , Bonani , KolaBagan , Gulshan</li>
-  </br>
-  <li style="float:left"><a href="#" style="text-decoration:none">PAYMENT OPTIONS:</a></li>
+   <li><style="text-decoration:none"><h4>Payment Options</h4></li></br>
   <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
- </ul>Copyright © 2018 FreshyFood Pvt Ltd
+  </center>
+  </div>
+  <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
+</div>
 
-				</div>
 	</div>
 </body>
 </html>
