@@ -20,7 +20,7 @@ if(isset($_SESSION["uid"])){
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" href="slider_css_js/swiper.min.css">
 		
-		<link rel="shortcut icon" href="simpliciashop.ico">
+		<link rel="shortcut icon" href="freshyFood.ico">
 		
 		
 <!--------------------------------------------------------------------------------------------------->
@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 
 .mcard {
-  background-image:url("aa.png") ;
+  background-image:url("slide_images/background.png") ;
   border-radius: 2px;
   display: inline-block;
   height: 300px;
@@ -171,16 +171,16 @@ $(document).ready(function(){
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<li><a href="#"><span class="glyphicon glyphicon-modal-window"></span>&nbsp;AboutUs</a></li>
-				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>
-				
 				 
 				<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
 				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Search</button></li>
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right">
-			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;ContactUs</a></li>
+			 
+			    <li><a href="#">&nbsp;En | বাং</a></li>
+				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
+			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
@@ -225,7 +225,7 @@ $(document).ready(function(){
 		</div>
 	</div>
 	
-	                                      </div>
+ </div>
 </div> 
 	
 	<p><br/></p>
@@ -285,8 +285,9 @@ $(document).ready(function(){
 				
 				
 			
-					<!-------------------------------------------------------------------------------------------->			
+<!-----------------------------------why choose us--------------------------------------------------------->			
 
+				
 				
 		<div class="panel panel-info">
 				
@@ -302,9 +303,10 @@ $(document).ready(function(){
 			
 				</div>
 						
-				
-	<!-------------------------------------------------------------------------------------------->			
-
+			
+<!-----------------------------------Why will you love Freshy food--------------------------------------------------------->			
+<div class="panel panel-info">
+<div class="panel-heading"><center><b><h3>Why will you love Freshy Food</h3></b></center></div>
 				
 		<div class="panel panel-info">
 				
@@ -339,10 +341,11 @@ $(document).ready(function(){
 			
 				</div>
 						
-				
+				</div>
 
-
-	<!-------------------------------------------------------------------------------------------->			
+<!------------------------------------why choose Freshy Food------------------------------------------------->		
+<div class="panel panel-info">
+<div class="panel-heading"><center><b><h3>Why choose Freshy Food</h3></b></center></div>	
 				<div class="panel panel-info">
 				<div class="card">
 		<div class="panel-body">
@@ -352,13 +355,10 @@ $(document).ready(function(){
 </div></div>
 			
 				</div>
-				
-				
-				
-				
-<!-------------------------------------------------------------------------------------------->
-
-
+				</div>
+<!----------------------------Customer opinion---------------------------------------------------------------->
+<div class="panel panel-info">
+<div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
 				<div class="panel panel-info">
 				<div class="card">
 		<div class="panel-body" id="myview">
@@ -368,31 +368,31 @@ $(document).ready(function(){
 </div></div>
 			
 				</div>
-				
-				
-
-<!-------------------------------------------------------------------------------------------->
+				</div>
+<!-------------------------------------footer------------------------------------------------------->
 
 
 
 
 <div class="card">
 				<div class="panel-footer">
+				
+				
+				
   <ul style="list-style-type:none" >
-  <li style="float:left"><a href="#" style="text-decoration:none">POPULAR CATEGORIES:</a></li>
-  <li>&nbsp;&nbsp;&nbsp;&nbsp;Fruit , VegetableGift , Basket , Dairy , Baverage , Offers , Packages</li>
+  <center>
+  <li><style="text-decoration:none"><h4>Our Services:</h4></li>
+  <li><a href="about_us.php" style="text-decoration:none">Live formalin dectation</a></li></li>
+  <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
+  <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="#" style="text-decoration:none">About Us</a></li></li>
   </br>
-  <li style="float:left"><a href="#" style="text-decoration:none">CITIES WE SERVE:</a></li>
-  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mirpur, Dhanmondi , Bonani , KolaBagan , Gulshan</li>
-  </br>
-  <li style="float:left"><a href="#" style="text-decoration:none">PAYMENT OPTIONS:</a></li>
+   <li><style="text-decoration:none"><h4>Payment Options</h4></li></br>
   <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
- </ul>Copyright © 2018 FreshyFood Pvt Ltd
+  </center>
+  </div>
+  <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
 
-				</div>
-			<div class="col-md-1"></div>
-		</div>
-		<br>
 
 <!-------------------------------------------------------------------------------------------->
 				<!--<div class="card">
@@ -400,6 +400,6 @@ $(document).ready(function(){
 				Copyright © 2018 FreshyFood Pvt Ltd</div>
 			<div class="col-md-1"></div>
 		</div>-->
-	</div>
+	
 </body>
 </html>

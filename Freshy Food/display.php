@@ -1,7 +1,7 @@
 <?php
 include("db.php");
 if(isset($_POST["review"])){
-	$category_query = " select * from user_info";
+	$category_query = " select * from user_review";
 	$run_query = mysqli_query($con,$category_query) or die(mysqli_error($con));
 
 	
@@ -10,15 +10,14 @@ if(isset($_POST["review"])){
 			
 			$username = $row['first_name'].' '.$row['last_name'];
 			$reviews = $row['review'];
-		 	$rate   = $row['rate'];
+		 	
 			echo "<td>
 			      <center>
 			     <div class='mcard card-1'>
 		         <br>
-			     <p><img src='p.png' height='100 px' width='100px' style='border-radius: 50%;'></p>
+			     <p><img src='slide_images/picture.png' height='100 px' width='100px' style='border-radius: 50%;'></p>
                  <h4 tyle='font-family:Sans-Serif;'>$username</h4>
-				 <p style='text-align:center ;justify;font-family:Sans-Serif;'>$reviews</p>
-				 <p style='text-align:center;justify;font-family:Sans-Serif;'>$rate</p>
+				 <p style='text-align:center ;justify;font-family:Sans-Serif; padding:20px;'>$reviews</p>
 				 </div>
 				 </center>
 				 <td>"; 

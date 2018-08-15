@@ -108,6 +108,27 @@ INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_s
 
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `user_review`
+--
+
+CREATE TABLE `user_review` (
+ 
+  `first_name` varchar(20) NOT NULL,
+  `last_name` varchar(20) NOT NULL,
+  `review` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+--
+-- Inserting data for table `user_info`
+--
+INSERT INTO `user_review` (`first_name`, `last_name`, `review` ) VALUES
+('Lisa', 'Rahman' , 'Loved the service! I urgently needed some stuffs and ordered it here and they delivered in less than an hour as promised! Thanks a lot for that.'),
+('Nazia', 'Haque', 'Fantastic service, usually on time and prompt in responding if anything needs to be changed.'),
+('Ayesha', 'Siddique', 'Satisfied by their professionalism ! Got my products in time. Didnot have to pay any delivery charge. I canot believe that. Keep it up !'),
+('Halima', 'Ahmed', ' I am loving this experience and Have been shopping from here and i have recommended my relatives too. They are also happy with the service. The prices are comparatively low and the products are genuine.');
+
 
 --
 -- Table structure for table `products`
@@ -149,34 +170,34 @@ INSERT INTO `products` (`product_id`, `product_cat`, `product_title`, `product_p
 (20, 6, 'Special offer', 1200, '25% off in 25 kg mangoes', 'offer.jpg', 'offer'),
 (21, 6, 'Rajshahi Mango', 300, 'Buy 5kg mango get 1kg free', 'mango.jpg', 'mango'),
 (22, 6, 'Apple', 720, 'Buy 6kg apple get 1kg free', 'apple.jpg', 'apple'),
-(23, 7, 'Fruit packages', 1750, 'Fruit packages', 'fruit.jpg', 'fruit'),
-(24, 7, 'Kids packages', 1850, 'Kids packages', 'kids.jpg', 'fruit'),
-(25, 7, 'wedding packages', 1550, 'wedding packages', 'wedding.jpg', 'fruit'),
-(26, 7, 'Birthday packages', 650, 'Birthday packages', 'birthday packages.jpg', 'fruit'),
-(27, 1, 'Orange 1kg', 120, 'Orange', 'orange.jpg', 'orange'),
-(28, 1, 'Guava 1kg', 60, 'Guava', 'guava.jpg', 'guava'),
-(29, 2, 'Tomato 1kg', 50, 'Tomato', 'tomato.jpg', 'tomato'),
-(30, 2, 'Potato 1kg', 50, 'Potato', 'potato.jpg', 'potato'),
-(31, 2, 'Capsicum 1kg', 80, 'Capsicum', 'capsicum.jpg', 'capsicum'),
-(32, 3, 'Vegetable Basket', 1120, 'vegetable Basket', 'vegetable basket.jpg', 'vegetable'),
-(33, 3, 'Fruit & Vegetable', 1520, 'Fruit & Vegetable', 'fruit & vegetable.jpg', 'vegetable'),
-(34, 3, 'Birthday Basket', 750, 'Birthday Basket', 'birthday basket.jpg', 'basket'),
-(35, 3, 'Kids Basket', 820, 'Kids Basket', 'kids basket.jpg', 'basket'),
-(36, 4, 'Egg 12pcs', 115, 'Egg', 'egg.jpg', 'egg'),
-(37, 4, 'Butter 250gm', 220, 'Butter', 'butter.jpg', 'butter'),
-(38, 4, 'Cheese 250gm', 228, 'Cheese', 'cheese.jpg', 'cheese'),
-(39, 5, 'Grape Juice 1L', 420, 'Grape Juice', 'grape juice.jpg', 'grape juice'),
-(40, 5, 'Strawberry Juice 1L', 690, 'strawberry juice', 'strawberry juice.jpg', 'juice'),
-(41, 5, 'Aloe vera drink 1L', 450, 'Aloe vera drink', 'aloe drink.jpg', 'aloe vera'),
-(42, 6, 'Seasonal offer', 490, 'seasonal offer', 'seasonal.jpg', 'offer'),
-(44, 6, 'Buy 2L Grape Juice get 250 ml free', 690, 'Buy 2L Grape Juice get 250 ml free', 'grape juice.jpg', 'juice'),
-(45, 7, 'Friend package', 520, 'Friend package', 'friend package.jpg', 'package'),
-(46, 7, 'Strawberry package', 100, 'stawberry package', 'strawberry.jpg', 'package'),
-(47, 7, 'Salad packages', 290, 'Salad packages', 'salad.jpg', 'packages'),
-(48, 3, 'Heart Shaped Basket', 820, 'Heart Shaped Basket', 'heart.jpg', 'basket'),
-(49, 4, 'Quail Egg 12pcs', 100, 'Quail Egg', 'quail.jpg', 'egg'),
-(50, 3, 'Special Basket', 550, 'Special Basket', 'special.jpg', 'basket'),
-(51, 3, 'Fruit Bouquets', 820, 'Fruit Bouquets', 'flower.jpg', 'basket');
+(23, 7, 'Fruit packages', 1750, '8 Bananas, 4 apples, .5kg grape', 'fruit.jpg', 'fruit'),
+(24, 7, 'Kids packages', 1850, 'black berry, green berry, grapes', 'kids.jpg', 'fruit'),
+(25, 7, 'wedding packages', 1550, '5kg  Himsagar Mango', 'wedding.jpg', 'fruit'),
+(26, 7, 'Birthday packages', 650, 'Fruit Bouquet', 'birthday packages.jpg', 'fruit'),
+(27, 1, 'Orange ', 120, '1kg', 'orange.jpg', 'orange'),
+(28, 1, 'Guava ', 60, '1kg', 'guava.jpg', 'guava'),
+(29, 2, 'Tomato ', 50, '1kg', 'tomato.jpg', 'tomato'),
+(30, 2, 'Potato ', 50, '1kg', 'potato.jpg', 'potato'),
+(31, 2, 'Capsicum ', 80, '1kg', 'capsicum.jpg', 'capsicum'),
+(32, 3, 'Vegetable Basket', 1120, 'Tomato, cucumber, carrot', 'vegetable basket.jpg', 'vegetable'),
+(33, 3, 'Fruit & Vegetable', 1520, 'Capsicum, Grape, Banana', 'fruit & vegetable.jpg', 'vegetable'),
+(34, 3, 'Birthday Basket', 750, 'Orange, Mango, Apple', 'birthday basket.jpg', 'basket'),
+(35, 3, 'Kids Basket', 820, 'Apple, Banana, Orange', 'kids basket.jpg', 'basket'),
+(36, 4, 'Egg ', 115, '12pcs', 'egg.jpg', 'egg'),
+(37, 4, 'Butter ', 220, '250gm', 'butter.jpg', 'butter'),
+(38, 4, 'Cheese ', 228, '250gm', 'cheese.jpg', 'cheese'),
+(39, 5, 'Grape Juice ', 420, '1L', 'grape juice.jpg', 'grape juice'),
+(40, 5, 'Strawberry Juice ', 690, '1L', 'strawberry juice.jpg', 'juice'),
+(41, 5, 'Aloe vera drink ', 450, '1L', 'aloe drink.jpg', 'aloe vera'),
+(42, 6, 'Seasonal offer', 490, '10% off', 'apple.jpg', 'offer'),
+(44, 6, 'Buy 2L Juice get 250 ml free', 690, 'Buy 2L Juice get 250 ml free', 'grape juice.jpg', 'juice'),
+(45, 7, 'Friend package', 520, 'Lychee, apple, orange, mango', 'friend package.jpg', 'package'),
+(46, 7, 'Strawberry package', 100, '1kg boxed strawberry', 'strawberry.jpg', 'package'),
+(47, 7, 'Salad packages', 290, 'Strawberry, berry, mango', 'salad.jpg', 'packages'),
+(48, 3, 'Heart Shaped Basket', 820, '2kg Strawberry', 'heart.jpg', 'basket'),
+(49, 4, 'Quail Egg ', 100, '12pcs', 'quail.jpg', 'egg'),
+(50, 3, 'Special Basket', 550, 'Grapes, Apples, Oranges', 'special.jpg', 'basket'),
+(51, 3, 'Fruit Bouquets', 820, 'Flower shaped fruit', 'flower.jpg', 'basket');
 
 
 
