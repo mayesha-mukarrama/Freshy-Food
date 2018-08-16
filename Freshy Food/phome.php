@@ -9,11 +9,11 @@ if(isset($_SESSION["uid"])){
 	<head>
 		<meta charset="UTF-8">
 		<title>FreshyFood</title>
-		<link rel="shortcut icon" href="simpliciashop.ico">
+		<link rel="shortcut icon" href="freshyFood.ico">
+		<script src="main.js"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="main.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<style></style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
@@ -203,13 +203,17 @@ return false;
 			<div class="col-md-1"></div>
 		</div>
 		<div class="card">
-				<div class="panel-footer">
+		
+	<div class="panel-footer">
 				
 				
   <ul style="list-style-type:none" >
-  <center>
+ 
+  <!-------------------------------------footer------------------------------------------------------->
+
+   <center>
   <li><style="text-decoration:none"><h4>Our Services:</h4></li>
-  <li><a href="about_us.php" style="text-decoration:none">Live formalin dectation</a></li></li>
+  <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
   <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
   <li><a href="#" style="text-decoration:none">About Us</a></li></li>

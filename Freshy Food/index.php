@@ -283,7 +283,7 @@ $(document).ready(function(){
 				
 				</div>
 				
-				
+				</br>
 			
 <!-----------------------------------why choose us--------------------------------------------------------->			
 
@@ -304,6 +304,7 @@ $(document).ready(function(){
 				</div>
 						
 			
+				</br>
 <!-----------------------------------Why will you love Freshy food--------------------------------------------------------->			
 <div class="panel panel-info">
 <div class="panel-heading"><center><b><h3>Why will you love Freshy Food</h3></b></center></div>
@@ -322,15 +323,15 @@ $(document).ready(function(){
   </div>
   <div class="column">
   <div class="card">
-    <img src="slide_images/p2.jpg"  style="width:100%"></div>
+    <a href="formalin.php"><img src="slide_images/p2.jpg"  style="width:100%"></a></div>
   </div>
   <div class="column">
   <div class="card">
-    <img src="slide_images/p4.jpg"  style="width:100%"></div>
+     <a href="phome.php"><img src="slide_images/p4.jpg"  style="width:100%"></a></div>
   </div>
   <div class="column">
   <div class="card">
-    <img src="slide_images/p3.jpg"  style="width:100%"></div>
+    <a href="phome.php"><img src="slide_images/p3.jpg"  style="width:100%"></a></div>
   </div>
     
 </div>
@@ -343,6 +344,7 @@ $(document).ready(function(){
 						
 				</div>
 
+				</br>
 <!------------------------------------why choose Freshy Food------------------------------------------------->		
 <div class="panel panel-info">
 <div class="panel-heading"><center><b><h3>Why choose Freshy Food</h3></b></center></div>	
@@ -356,6 +358,8 @@ $(document).ready(function(){
 			
 				</div>
 				</div>
+				
+				</br>
 <!----------------------------Customer opinion---------------------------------------------------------------->
 <div class="panel panel-info">
 <div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
@@ -369,19 +373,21 @@ $(document).ready(function(){
 			
 				</div>
 				</div>
+				
+				</br>
 <!-------------------------------------footer------------------------------------------------------->
 
 
 
 
 <div class="card">
-				<div class="panel-footer">
-				
-				
+
+<div class="panel-footer">
+								
   <ul style="list-style-type:none" >
   <center>
   <li><style="text-decoration:none"><h4>Our Services:</h4></li>
-  <li><a href="about_us.php" style="text-decoration:none">Live formalin dectation</a></li></li>
+  <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
   <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
   <li><a href="#" style="text-decoration:none">About Us</a></li></li>
