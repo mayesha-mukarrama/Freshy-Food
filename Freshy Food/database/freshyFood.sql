@@ -116,6 +116,7 @@ CREATE TABLE `user_review` (
  
   `first_name` varchar(20) NOT NULL,
   `last_name` varchar(20) NOT NULL,
+  `image` text NOT NULL,
   `review` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -123,11 +124,11 @@ CREATE TABLE `user_review` (
 --
 -- Inserting data for table `user_info`
 --
-INSERT INTO `user_review` (`first_name`, `last_name`, `review` ) VALUES
-('Lisa', 'Rahman' , 'Loved the service! I urgently needed some stuffs and ordered it here and they delivered in less than an hour as promised! Thanks a lot for that.'),
-('Nazia', 'Haque', 'Fantastic service, usually on time and prompt in responding if anything needs to be changed.'),
-('Ayesha', 'Siddique', 'Satisfied by their professionalism ! Got my products in time. Didnot have to pay any delivery charge. I canot believe that. Keep it up !'),
-('Halima', 'Ahmed', ' I am loving this experience and Have been shopping from here and i have recommended my relatives too. They are also happy with the service. The prices are comparatively low and the products are genuine.');
+INSERT INTO `user_review` (`first_name`, `last_name`, `image`, `review` ) VALUES
+('Lisa', 'Rahman' ,'j1.jpg', 'Loved the service! I urgently needed some stuffs and ordered it here and they delivered in less than an hour as promised! Thanks a lot for that.'),
+('Nazia', 'Haque','j2.jpg', 'Fantastic service, usually on time and prompt in responding if anything needs to be changed.'),
+('Ayesha', 'Siddique','j3.jpg', 'Satisfied by their professionalism ! Got my products in time. Didnot have to pay any delivery charge. I canot believe that. Keep it up !'),
+('Halima', 'Ahmed', 'j4.jpg',' I am loving this experience and Have been shopping from here and i have recommended my relatives too. They are also happy with the service. The prices are comparatively low and the products are genuine.');
 
 
 --

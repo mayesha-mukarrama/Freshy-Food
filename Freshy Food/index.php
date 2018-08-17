@@ -9,15 +9,15 @@ if(isset($_SESSION["uid"])){
 	<head>
 		<meta charset="UTF-8">
 		<title>FreshyFood</title>
-		<link rel="stylesheet" href="w3.css">
+		<link rel="stylesheet" href="css/w3.css">
 		<link rel="shortcut icon" href="freshyFood.ico">
 
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="main.js"></script>
+		<script src="js/main.js"></script>
 		
-		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" href="slider_css_js/swiper.min.css">
 		
 		
