@@ -10,11 +10,11 @@ if(isset($_SESSION["uid"])){
 		<meta charset="UTF-8">
 		<title>FreshyFood</title>
 		<link rel="shortcut icon" href="freshyFood.ico">
-		<script src="js/main.js"></script>
+		<link href="style.css" rel="stylesheet" type="text/css"  media="all"/>
+		<script src="main.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="js/bootstrap.min.js"></script>		
 		<style></style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">

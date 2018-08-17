@@ -9,16 +9,15 @@ if(isset($_SESSION["uid"])){
 	<head>
 		<meta charset="UTF-8">
 		<title>FreshyFood</title>
-		<link rel="stylesheet" href="css/w3.css">
-		<link rel="shortcut icon" href="freshyFood.ico">
-
+		<link rel="stylesheet" href="w3.css"/>
+		<link rel="shortcut icon" href="freshyFood.ico"/>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" href="slider_css_js/swiper.min.css"/>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="main.js"></script>		
 		
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="slider_css_js/swiper.min.css">
 		
 		
 		
@@ -180,7 +179,7 @@ $(document).ready(function(){
 			 
 			    <li><a href="#">&nbsp;En | বাং</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
-			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+			    <li><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
@@ -361,23 +360,20 @@ $(document).ready(function(){
 				
 				</br>
 <!----------------------------Customer opinion---------------------------------------------------------------->
-<div class="panel panel-info">
-<div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
-				<div class="panel panel-info">
+        <div class="panel panel-info">
+            <div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
+			<div class="panel panel-info">
 				<div class="card">
-		<div class="panel-body" id="myview">
-					
-						
+		            <div class="panel-body" id="myview">											
 								
-</div></div>
+                    </div>
+                </div>
 			
-				</div>
-				</div>
+			</div>
+		</div>
 				
 				</br>
 <!-------------------------------------footer------------------------------------------------------->
-
-
 
 
 <div class="card">
@@ -389,8 +385,8 @@ $(document).ready(function(){
   <li><style="text-decoration:none"><h4>Our Services:</h4></li>
   <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
-  <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
-  <li><a href="#" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
   </br>
    <li><style="text-decoration:none"><h4>Payment Options</h4></li></br>
   <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
