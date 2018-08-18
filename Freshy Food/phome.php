@@ -8,13 +8,13 @@ if(isset($_SESSION["uid"])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>FreshyFood</title>
+		<title>Freshy Food</title>
 		<link rel="shortcut icon" href="freshyFood.ico">
-		<link href="style.css" rel="stylesheet" type="text/css"  media="all"/>
-		<script src="main.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
-		<script src="js/bootstrap.min.js"></script>		
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<style></style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
@@ -153,21 +153,7 @@ return false;
 			<div class="col-md-2 col-xs-12">
 				<div id="get_category">
 				</div>
-				<!--<div class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#"><h4>Categories</h4></a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-				</div> -->
 				
-				<!--<div class="nav nav-pills nav-stacked">
-					<li class="active"><a href="#"><h4>Brand</h4></a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-					<li><a href="#">Categories</a></li>
-				</div> -->
 			</div>
 			<div class="col-md-8 col-xs-12">
 				<div class="row">
@@ -179,19 +165,9 @@ return false;
 					<div class="panel-body">
 
 						<center><div id="get_product">
-							<!--Here we get product jquery Ajax Request-->
+							
 					</div></center>
-						<!--<div class="col-md-4">
-							<div class="panel panel-info">
-								<div class="panel-heading">Samsung Galaxy</div>
-								<div class="panel-body">
-									<img src="product_images/images.JPG"/>
-								</div>
-								<div class="panel-heading">Tk..500.00
-									<button style="float:right;" class="btn btn-danger btn-xs">AddToCart</button>
-								</div>
-							</div>
-						</div> -->
+						
 					</div>
 					
 					
@@ -211,38 +187,46 @@ return false;
  
   <!-------------------------------------footer------------------------------------------------------->
 
-   <center>
+
+<div class="card">
+
+<div class="panel-footer">
+								
+  <ul style="list-style-type:none" >
+  <center>
+  <div class="row">
+			
+    <div class="col-md-3" >
   <li><style="text-decoration:none"><h4>Our Services:</h4></li>
   <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
-  <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
-  <li><a href="#" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
   </br>
-   <li><style="text-decoration:none"><h4>Payment Options</h4></li></br>
-  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
+  </div>
+   <div class="col-md-3" >
+  <li><style="text-decoration:none"><h4>Our Products:</h4></li>
+  <li><a href="phome.php" style="text-decoration:none">Fruits</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Vegetables</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Baverages</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Gift Basket</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Dairy</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Packages</a></li>
+  </br>
+  </div>
+  <div class="col-md-6" >
+   <li><style="text-decoration:none"><h4>Payment Options:</h4></li></br>
+  <li><span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
   </center>
+  </div>
+  </div>
   </div>
   <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
 </div>
 
-	</div>
+	
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
