@@ -31,9 +31,6 @@ INSERT INTO `adminlog` (`username`, `password`) VALUES
 ('admin', 'admin');
 
 -- --------------------------------------------------------
-
--- --------------------------------------------------------
-
 --
 -- Table structure for table `supplier_info`
 --
@@ -55,7 +52,6 @@ CREATE TABLE `supplier_info` (
 INSERT INTO `supplier_info` (`supplier_id`, `first_name`, `last_name`, `password`, `mobile`, `address1`, `address2`) VALUES
 (1, 'Rafiqul', 'Islam ', '1234', '01718885698', 'Mirpur-10', 'Dhaka'),
 (2, 'Shafiq', 'Rahman', '4567', '01712241178', 'Jigatola', 'dhaka');
-
 
 
 --
