@@ -32,6 +32,32 @@ INSERT INTO `adminlog` (`username`, `password`) VALUES
 
 -- --------------------------------------------------------
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `supplier_info`
+--
+
+CREATE TABLE `supplier_info` (
+  `supplier_id` int(15) NOT NULL,
+  `first_name` varchar(100) NOT NULL,
+  `last_name` varchar(100) NOT NULL,
+  `password` varchar(250) NOT NULL,
+  `mobile` varchar(15) NOT NULL,
+  `address1` varchar(250) NOT NULL,
+  `address2` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Inserting data for table `supplier_info`
+--
+
+INSERT INTO `supplier_info` (`supplier_id`, `first_name`, `last_name`, `password`, `mobile`, `address1`, `address2`) VALUES
+(1, 'Rafiqul', 'Islam ', '1234', '01718885698', 'Mirpur-10', 'Dhaka'),
+(2, 'Shafiq', 'Rahman', '4567', '01712241178', 'Jigatola', 'dhaka');
+
+
+
 --
 -- Table structure for table `cart`
 --
@@ -231,6 +257,11 @@ INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `passwor
 --
 -- Primary Key Indexes for tables
 --
+--
+-- Indexes for table `supplier_info`
+--
+ALTER TABLE `supplier_info`
+  ADD PRIMARY KEY (`supplier_id`);
 
 --
 -- Indexes for table `cart`
@@ -265,8 +296,11 @@ ALTER TABLE `user_info`
 --
 -- AUTO_INCREMENT for tables
 --
-
-
+-- AUTO_INCREMENT for table `supplier_info`
+--
+ALTER TABLE `supplier_info`
+  MODIFY `supplier_id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+--
 ALTER TABLE `cart`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
