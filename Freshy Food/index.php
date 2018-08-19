@@ -9,15 +9,16 @@ if(isset($_SESSION["uid"])){
 	<head>
 		<meta charset="UTF-8">
 		<title>FreshyFood</title>
-		<link rel="stylesheet" href="w3.css"/>
-		<link rel="shortcut icon" href="freshyFood.ico"/>
-		<link rel="stylesheet" type="text/css" href="style.css"/>
-		<link rel="stylesheet" href="slider_css_js/swiper.min.css"/>
+		<link rel="stylesheet" href="css/w3.css">
+		<link rel="shortcut icon" href="freshyFood.ico">
+
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="main.js"></script>		
+		<script src="js/main.js"></script>
 		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="slider_css_js/swiper.min.css">
 		
 		
 		
@@ -73,18 +74,20 @@ $(document).ready(function(){
 		})
 	}
 	})
+	
 </script>
+
 <style>
 
 
 .mcard {
-  background-image:url("slide_images/background.png") ;
-  border-radius: 2px;
+  background-image:url("profile_images/background.png") ;
+  border-radius: 1.5px;
   display: inline-block;
   height: 300px;
   margin: 0.3rem;
   position: relative;
-  width: 300px;
+  width: 288px;
 }
 
 .card-1 {
@@ -125,9 +128,7 @@ $(document).ready(function(){
      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.container {
-    padding: 2px 16px;
-}
+
 </style>
 
 
@@ -172,14 +173,14 @@ $(document).ready(function(){
 			<ul class="nav navbar-nav">
 				 
 				<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
-				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Search</button></li>
+				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn1">Search</button></li>
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right">
 			 
 			    <li><a href="#">&nbsp;En | বাং</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
-			    <li><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
@@ -301,15 +302,16 @@ $(document).ready(function(){
 </div></div>
 			
 				</div>
-				
+						
+			
 				</br>
 <!-----------------------------------Why will you love Freshy food--------------------------------------------------------->			
-<div class="panel panel-info">
-<div class="panel-heading"><center><b><h3>Why will you love Freshy Food</h3></b></center></div>
+
+
 				
 		<div class="panel panel-info">
 				
-    
+    <div class="panel-heading"><center><b><h3>Why Will You Love FreshyFood</h3></b></center></div>
   <div class="card">
 		<div class="panel-body">
 		
@@ -340,39 +342,41 @@ $(document).ready(function(){
 			
 				</div>
 						
-				</div>
-
 				</br>
+
+				
 <!------------------------------------why choose Freshy Food------------------------------------------------->		
-<div class="panel panel-info">
-<div class="panel-heading"><center><b><h3>Why choose Freshy Food</h3></b></center></div>	
+
+
 				<div class="panel panel-info">
+				<div class="panel-heading"><center><b><h3>Why Choose FreshyFood</h3></b></center></div>	
 				<div class="card">
 		<div class="panel-body">
 					<img src="slide_images/b2.jpg" height="50px" width="100%">	
 						
 								
+</div>
+</div>
+			
+				</div>
+				
+				
+				</br>
+<!----------------------------Customer Review opinion---------------------------------------------------------------->
+
+<div class="panel panel-info">
+<div class="panel-heading"><center><b><h3>User Reviews About Our Services</h3></b></center></div>
+				<div class="card">
+		<div class="panel-body" id="myview">
+					
+						
+								
 </div></div>
 			
 				</div>
-				</div>
-				<img src="slide_images/delivery.png" height="200px" width="100%">		
-			
-				</br>
-<!----------------------------Customer opinion---------------------------------------------------------------->
-        <div class="panel panel-info">
-            <div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
-			<div class="panel panel-info">
-				<div class="card">
-		            <div class="panel-body" id="myview">											
-								
-                    </div>
-                </div>
-			
-			</div>
-		</div>
 				
-				</br>
+				
+				
 <!-------------------------------------footer------------------------------------------------------->
 
 
@@ -382,36 +386,25 @@ $(document).ready(function(){
 								
   <ul style="list-style-type:none" >
   <center>
-  <div class="row">
-			
-    <div class="col-md-3" >
   <li><style="text-decoration:none"><h4>Our Services:</h4></li>
   <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
-  <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
-  <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="#" style="text-decoration:none">About Us</a></li></li>
   </br>
-  </div>
-   <div class="col-md-3" >
-  <li><style="text-decoration:none"><h4>Our Products:</h4></li>
-  <li><a href="phome.php" style="text-decoration:none">Fruits</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Vegetables</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Baverages</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Gift Basket</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Dairy</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Packages</a></li>
-  </br>
-  </div>
-  <div class="col-md-6" >
-   <li><style="text-decoration:none"><h4>Payment Options:</h4></li></br>
-  <li><span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
+   <li><style="text-decoration:none"><h4>Payment Options</h4></li></br>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
   </center>
   </div>
-  </div>
-  </div>
-  <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
+  <div class="panel-footer"><center>Copyright © 2018 FreshyFood All rights reserved</center></div>
 </div>
 
+<!-------------------------------------------------------------------------------------------->
+				<!--<div class="card">
+				<div class="panel-footer">
+				Copyright © 2018 FreshyFood Pvt Ltd</div>
+			<div class="col-md-1"></div>
+		</div>-->
 	
 </body>
 </html>
