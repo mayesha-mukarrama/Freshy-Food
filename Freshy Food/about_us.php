@@ -23,7 +23,7 @@
 		<style>
 		
 		.button {
-    background-color: #4CAF50; /* Green */
+    background-color: #101010; /* black */
     border: none;
     color: white;
     padding: 10px 30px;
@@ -244,12 +244,65 @@
                     </h4>
                                 </div>
                             </div>                
-</center>
-                            <div class="card-box">
+                            </center>
+                          
+
+						   <div class="card-box">
                                 <p class="block-text mbr-fonts-style display-7">. 
                                 </p>
                             </div>
                         </div>
+						
+						
+					<div>
+					</br>
+					</br>
+					</br>
+					</br>
+					</br>
+					
+					</div>
+					<div>
+					</br>
+					</div>
+					
+						
+						<!---------------------------------owner images------------------------------------------------>
+						<h2 style="text-align: center;" class="mbr-title pt-2 mbr-fonts-style display-2"><strong>Our entrepreneurs</strong></h2>
+					</br>
+				<div> 
+				<div>
+					</br>
+					</div>
+                    <div class="row">
+		                        <div class="col-md-3">
+                                <img style="display:block;margin:auto;" src="slide_images/about4.jpg" height="200px" width="200px" />
+                                <p style="text-align: center;"> Tanha Rahman </p> 
+                                <p style="text-align: center;">Managing Director</p>								
+                                </div>
+								
+								<div class="col-md-3">
+                                <img style="display:block;margin:auto;" src="slide_images/about1.png" height="200px" width="200px" />
+                                <p style="text-align: center;"> Fatema Ahmed </p> 
+                                <p style="text-align: center;">Chairman</p>								
+                                </div>
+								
+								<div class="col-md-3">
+                                <img style="display:block;margin:auto;" src="slide_images/about3.jpg" height="200px" width="200px" />
+                                <p style="text-align: center;"> Mahmuda Alam </p> 
+                                <p style="text-align: center;">CEO</p>								
+                                </div>
+								
+								<div class="col-md-3">
+                                <img style="display:block;margin:auto;" src="slide_images/about2.jpg" height="200px" width="200px" />
+                                <p style="text-align: center;"> Humaiya Zaman </p> 
+                                <p style="text-align: center;">Chief Technology Officer</p>								
+                                </div>
+																																													
+						</div>
+                </div>  						
+				<center><a href="#" class="button">Fix an Appointment</a><?center>
+<!--------------------------------//owner images----------------------------------------------->
 
                         <div class="card p-3 pr-3">
                             <div class="media">
