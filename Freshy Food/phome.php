@@ -201,7 +201,7 @@ return false;
   <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
   <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
-  <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="about.php" style="text-decoration:none">About Us</a></li></li>
   </br>
   </div>
    <div class="col-md-3" >
