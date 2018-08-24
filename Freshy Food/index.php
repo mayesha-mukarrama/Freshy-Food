@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 if(isset($_SESSION["uid"])){
 	header("location:profile.php");
@@ -150,6 +150,44 @@ $(document).ready(function(){
     display: table;
 }
 </style>
+
+<style>
+.container {
+    position: relative;
+    font-family: Arial;
+text-align: center;
+    color: lightgreen;
+font-size:150%;
+}
+
+.centered {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .btn {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color:lightgreen;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: white;
+}
+</style>
+
 	</head>
 	
 <body oncontextmenu="return false;">
@@ -372,6 +410,27 @@ $(document).ready(function(){
 			
 			</div>
 		</div>
+
+<!------------------------------------Join with us------------------------------------------------->		
+<div class="panel panel-info">
+<div class="panel-heading"><center><b><h3>Join With Us</h3></b></center></div>	
+				<div class="panel panel-info">
+				<div class="card">
+		<div class="panel-body">
+					
+</div></div>
+			
+				</div>
+				</div>
+                                                                   
+ <div class="container">
+  <img src="slide_images/join_with_us.jpg" height="500px" width="1000px"> <div class="centered">
+   <b><p>Do you own a business?</p></b>
+   <b> <p>Join with  FreshyFood</p></b>
+
+  </div>
+<button class="btn">join with us</button>
+</div>
 				
 				</br>
 <!-------------------------------------footer------------------------------------------------------->
