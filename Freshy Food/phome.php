@@ -8,8 +8,8 @@ if(isset($_SESSION["uid"])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Freshy Food</title>
-		<link rel="shortcut icon" href="freshyFood.ico">
+		<title>FreshyFood</title>
+		<link rel="shortcut icon" href="freshyfood.ico">
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -70,7 +70,8 @@ return false;
 <div class="wait overlay">
 	<div class="loader"></div>
 </div>
-	<div class="navbar navbar-inverse navbar-fixed-top">
+
+<div class="navbar navbar-inverse navbar-fixed-top">
 	<div class="card">
 		<div class="container-fluid">	
 			<div class="navbar-header">
@@ -107,12 +108,7 @@ return false;
 							</div>
 							<div class="panel-body">
 								<div id="cart_product">
-								<!--<div class="row">
-									<div class="col-md-3">Sl.No</div>
-									<div class="col-md-3">Product Image</div>
-									<div class="col-md-3">Product Name</div>
-									<div class="col-md-3">Price in Tk.</div>
-								</div>-->
+								
 								</div>
 							</div>
 							<div class="panel-footer"></div>
@@ -142,8 +138,11 @@ return false;
 			</ul>
 		</div>
 	</div>
-	</div>
-</div>	
+	
+ </div>
+</div> 
+
+
 	<p><br/></p>
 	<p><br/></p>
 	<p><br/></p>
@@ -151,8 +150,13 @@ return false;
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-2 col-xs-12">
-				<div id="get_category">
-				</div>
+				<div class="card"><div id="get_category">
+				</div></div>
+				</br>
+				<div class="card">
+				<div id="get_brand">
+				</div></div>
+				
 				
 			</div>
 			<div class="col-md-8 col-xs-12">
@@ -163,70 +167,54 @@ return false;
 				<div class="panel panel-info">
 					<div class="panel-heading"><center><b>Products</b></center></div>
 					<div class="panel-body">
-
+                       
 						<center><div id="get_product">
-							
+						
+							<!--Here we get product jquery Ajax Request-->
 					</div></center>
 						
 					</div>
-					
-					
-					
-					
-					
+						
 				</div>
 			</div>
 			<div class="col-md-1"></div>
 		</div>
-		<div class="card">
-		
-	<div class="panel-footer">
-				
-				
-  <ul style="list-style-type:none" >
- 
-  <!-------------------------------------footer------------------------------------------------------->
-
-
 <div class="card">
 
 <div class="panel-footer">
 								
   <ul style="list-style-type:none" >
   <center>
-  <div class="row">
-			
-    <div class="col-md-3" >
   <li><style="text-decoration:none"><h4>Our Services:</h4></li>
   <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
-  <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
-  <li><a href="about.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="#" style="text-decoration:none">About Us</a></li></li>
   </br>
-  </div>
-   <div class="col-md-3" >
-  <li><style="text-decoration:none"><h4>Our Products:</h4></li>
-  <li><a href="phome.php" style="text-decoration:none">Fruits</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Vegetables</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Baverages</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Gift Basket</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Dairy</a></li>
-  <li><a href="phome.php" style="text-decoration:none">Packages</a></li>
-  </br>
-  </div>
-  <div class="col-md-6" >
-   <li><style="text-decoration:none"><h4>Payment Options:</h4></li></br>
-  <li><span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
+   <li><style="text-decoration:none"><h4>Payment Options</h4></li></br>
+  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
   </center>
   </div>
-  </div>
-  </div>
-  <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
+  <div class="panel-footer"><center>Copyright © 2018 FreshyFood All rights reserved</center></div>
 </div>
 
-	
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
