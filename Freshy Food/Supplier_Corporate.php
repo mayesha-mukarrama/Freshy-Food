@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 session_start();
 if(isset($_SESSION["uid"])){
 	header("location:profile.php");
@@ -127,6 +127,7 @@ $(document).ready(function(){
 
 .container {
     padding: 2px 16px;
+
 }
 </style>
 
@@ -135,6 +136,8 @@ $(document).ready(function(){
 <style>
 * {
     box-sizing: border-box;
+
+
 }
 
 .column {
@@ -145,6 +148,7 @@ $(document).ready(function(){
 
 /* Clearfix (clear floats) */
 .row::after {
+
     content: "";
     clear: both;
     display: table;
@@ -156,13 +160,13 @@ $(document).ready(function(){
     position: relative;
     font-family: Arial;
 text-align: center;
-    color: lightgreen;
+    color: orange;
 font-size:150%;
 }
 
 .centered {
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -216,7 +220,7 @@ font-size:150%;
 			
 			<ul class="nav navbar-nav navbar-right">
 			 
-			    <li><a href="#">&nbsp;En | বাং</a></li>
+			    <li><a href="#">&nbsp;En | ???</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
 			    <li><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
@@ -281,136 +285,7 @@ font-size:150%;
 		
 		<!--<div class="panel-heading">Products</div>-->
 					
-		<div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="slide_images/v1.jpg"></div>
-      <div class="swiper-slide"><img src="slide_images/v2.jpg"></div>
-      <div class="swiper-slide"><img src="slide_images/v3.jpg"></div>
-      <div class="swiper-slide"><img src="slide_images/v4.jpg"></div>
-      <div class="swiper-slide"><img src="slide_images/v5.jpg"></div>
-      <div class="swiper-slide"><img src="slide_images/v6.jpg"></div>
-      <div class="swiper-slide"><img src="slide_images/v7.jpg"></div>
-	  <div class="swiper-slide"><img src="slide_images/v8.jpg"></div>
-      <div class="swiper-slide"><img src="slide_images/v9.jpg"></div>
-	  <div class="swiper-slide"><img src="slide_images/v10.jpg"></div>
-	  <div class="swiper-slide"><img src="slide_images/v11.jpg"></div>
-      
-    </div>
-    <!-- Add Pagination 
-    <div class="swiper-pagination"></div>-->
-    <!-- Add Arrows -->
-    <!-- <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>-->
-  </div>
-
-  <!-- Swiper JS -->
-  <script src="slider_css_js/swiper.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 0,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      
-     
-    });
-  </script>
-				
-				</div>
-				
-				</br>
-			
-<!-----------------------------------why choose us--------------------------------------------------------->			
-
-				
-				
-		<div class="panel panel-info">
-				
-    
-  
-<div class="card">
-		<div class="panel-body">
-		
-				<img src="slide_images/b1.jpg" height="100%" width="100%">		
-						
-								
-</div></div>
-			
-				</div>
-				
-				</br>
-<!-----------------------------------Why will you love Freshy food--------------------------------------------------------->			
-<div class="panel panel-info">
-<div class="panel-heading"><center><b><h3>Why will you love Freshy Food</h3></b></center></div>
-				
-		<div class="panel panel-info">
-				
-    
-  <div class="card">
-		<div class="panel-body">
-		
-				<div class="row">
-
-  <div class="column">
-  <div class="card">
-    <img src="slide_images/p1.jpg"  style="width:100%"></div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <a href="formalin.php"><img src="slide_images/p2.jpg"  style="width:100%"></a></div>
-  </div>
-  <div class="column">
-  <div class="card">
-     <a href="phome.php"><img src="slide_images/p4.jpg"  style="width:100%"></a></div>
-  </div>
-  <div class="column">
-  <div class="card">
-    <a href="phome.php"><img src="slide_images/p3.jpg"  style="width:100%"></a></div>
-  </div>
-    
 </div>
-						
-								
-</div>
-</div>
-			
-				</div>
-						
-				</div>
-
-				</br>
-<!------------------------------------why choose Freshy Food------------------------------------------------->		
-<div class="panel panel-info">
-<div class="panel-heading"><center><b><h3>Why choose Freshy Food</h3></b></center></div>	
-				<div class="panel panel-info">
-				<div class="card">
-		<div class="panel-body">
-					<img src="slide_images/b2.jpg" height="50px" width="100%">	
-						
-								
-</div></div>
-			
-				</div>
-				</div>
-				<img src="slide_images/delivery.png" height="200px" width="100%">		
-			
-				</br>
-<!----------------------------Customer opinion---------------------------------------------------------------->
-        <div class="panel panel-info">
-            <div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
-			<div class="panel panel-info">
-				<div class="card">
-		            <div class="panel-body" id="myview">											
-								
-                    </div>
-                </div>
-			
-			</div>
-		</div>
 
 <!------------------------------------Join with us------------------------------------------------->		
 <div class="panel panel-info">
@@ -425,13 +300,12 @@ font-size:150%;
 				</div>
                                                                    
  <div class="container">
-  <img src="slide_images/join_with_us.jpg" height="500px" width="1000px"> <div class="centered">
-   <b><p>Do you own a business?</p></b>
-   <b> <p>Join with  FreshyFood</p></b>
-  </div>
-<button class="btn "><a href="Supplier_Corporate.php">join with us</button>
-
-
+  <img src="slide_images/join_with_us.jpg" height="500px" width="1300px"> <div class="centered">
+   <b><p>FRESHY FOOD CORPORATE</p></b>
+   <b> <p>Freshy Food is the newest dedicated online food ordering retailer with more than 5,000 subscribers and 50+ business customers across Dhaka. Our corporate customers can enjoy FREE delivery of fresh food produce, office items, cleaning goods and much more � all from one place and at a discounted price for bulk orders. We have friendly staff who are committed to serve you better</p></b>
+  
+</div>
+<button class="btn "><a href="Supplier_Corporate.php">Sign up</button>
 </div>
 				
 				</br>
