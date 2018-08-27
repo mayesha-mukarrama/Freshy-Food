@@ -156,13 +156,13 @@ $(document).ready(function(){
     position: relative;
     font-family: Arial;
 text-align: center;
-    color: lightgreen;
+    color: #29c1aa;
 font-size:150%;
 }
 
 .centered {
     position: absolute;
-    top: 15%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -173,7 +173,7 @@ font-size:150%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color:lightgreen;
+    background-color:#29c1aa;
     color: black;
     font-size: 16px;
     padding: 12px 24px;
@@ -185,7 +185,7 @@ font-size:150%;
 }
 
 .container .btn:hover {
-    background-color: white;
+    background-color: #2e6da4;
 }
 </style>
 
@@ -422,19 +422,21 @@ font-size:150%;
 </div></div>
 			
 				</div>
-				</div>
+				
                                                                    
  <div class="container">
-  <img src="slide_images/join_with_us.jpg" height="500px" width="1000px"> <div class="centered">
-   <b><p>Do you own a business?</p></b>
+  <img src="slide_images/join with us.jpg" height="230px" width="100%"> 
+  <div class="centered">
+   <b><p>Do you want to be a corporate customer?</p></b>
    <b> <p>Join with  FreshyFood</p></b>
   </div>
-<button class="btn "><a href="Supplier_Corporate.php">join with us</button>
-
+<button class="btn "><a style="color:#fff;" href="Supplier_Corporate.php">join with us</button></a>
 
 </div>
+</br>
+</div>
 				
-				</br>
+				
 <!-------------------------------------footer------------------------------------------------------->
 
 
