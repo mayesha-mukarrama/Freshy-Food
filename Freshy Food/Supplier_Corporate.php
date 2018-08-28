@@ -296,13 +296,93 @@ font-size:150%;
 </br>
 
 
+<!-------------------------------------  our goals------------------------------------------------------->	
+ <p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
+
+<div class="row">
+		     <div class="col-md-2">	
+             </div>
+												
+	         <div class="col-md-5">
+              <img style="border-radius: 8px;" src="slide_images/goal.jpg"  style="width: 420px; height:320px;"> 
+             </div>
+			
+			 <div class="col-md-3">
+			 <p><br/></p>
+	         <p><br/></p>
+	         <p><br/></p>
+              <b><p><h3>The next generation of eCommerce</h3></p></b></br>
+			  <p><font size="3"> We're uniting the best entrepreneurs, software engineers, data scientists, suppliers, and technologists to create seamless experiences for customers to shop anytime, anywhere. </p>
+             </div>
+			 <div class="col-md-2">	
+             </div>
+</div>
 
 
+<!-------------------------------------  What are we looking for------------------------------------------------------->	
+				
+				
+	<p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
 
+<div class="row">
+		     <div class="col-md-1">	
+             </div>	         
+			
+			 <div class="col-md-6">
+			    <p><br/></p>
+	            <p><br/></p>
+	            
+              <b><p><h3>What we look for</h3></p></b></br>
+			  <font size="3"><li>Create an environment that inspires creativity, innovation and personal growth</li>
+			  <font size="3"><li>Deliver the highest possible quality/value proposition to patients, providers, and payors</li>
+			  <font size="3"><li>Grow profitably at a rate faster than the market in selected segments</li>
+			  <font size="3"><li>Always operate in a highly ethical and legally compliant fashion</li>
+			  <font size="3"><li>Treat each other with respect and dignity</li>
+             </div>
+			 
+			 <div class="col-md-4">
+              <img  src="slide_images/resume.jpg"  style="width: 420px; height:320px;"> 
+             </div>
+			 <div class="col-md-1">	
+             </div>
+</div>
+				<p><br/></p>
+	            <p><br/></p>
+	            <p><br/></p>
 
+<!-------------------------------------  To know more ------------------------------------------------------->
+				
+				
 
-
-
+<div class="row">
+		     <div class="col-md-2">	
+             </div>
+												
+	         <div class="col-md-5">
+              <img style="border-radius: 8px;" src="slide_images/question.jpg"  style="width: 420px; height:320px;"> 
+             </div>
+			
+			 <div class="col-md-3">
+			 <p><br/></p>
+	         <p><br/></p>
+	         <p><br/></p>
+              <b><p><h3>To know more</h3></p></b></br>
+			  <p><font size="3"> Contact Freshy Food</p>
+			  <p><font size="3"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Email us at corporate@freshyFood.com</p>
+			  <p><font size="3"><span class="glyphicon glyphicon-phone"></span>&nbsp;Call us on +880 15426879</p>
+             </div>
+			 <div class="col-md-2">	
+             </div>
+</div>
+				<p><br/></p>
+	            <p><br/></p>
+	            <p><br/></p>
+				
+				
 				
 <!-------------------------------------footer------------------------------------------------------->
 
