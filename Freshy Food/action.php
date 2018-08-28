@@ -25,7 +25,7 @@ if(isset($_POST["brand"])){
 	$run_query = mysqli_query($con,$brand_query);
 	echo "
 		<div class='nav nav-pills nav-stacked'>
-			<li class='active'><a href='#'><center><h4>Seller Store</h4></center></a></li>
+			<li class='active'><a href='#'><center><h4>Supplier Store</h4></center></a></li>
 	";
 	if(mysqli_num_rows($run_query) > 0){
 		while($row = mysqli_fetch_array($run_query)){
@@ -312,9 +312,9 @@ if (isset($_POST["Common"])) {
 								}
 							  
 							echo   
-								'<input type="hidden" name="return" value="http://localhost/simpliciaShop/payment_success.php"/>
-					                <input type="hidden" name="notify_url" value="http://localhost/simpliciaShop/payment_success.php">
-									<input type="hidden" name="cancel_return" value="http://localhost/simpliciaShop/cancel.php"/>
+								'<input type="hidden" name="return" value="http://localhost/freshyfood/payment_success.php"/>
+					                <input type="hidden" name="notify_url" value="http://localhost/freshyfood/payment_success.php">
+									<input type="hidden" name="cancel_return" value="http://localhost/freshyfood/cancel.php"/>
 									<input type="hidden" name="currency_code" value="Tk"/>
 									<input type="hidden" name="custom" value="'.$_SESSION["uid"].'"/>
 									<input style="float:right;margin-right:80px;" type="image" name="submit"
