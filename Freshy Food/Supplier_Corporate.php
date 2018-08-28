@@ -160,15 +160,15 @@ $(document).ready(function(){
     position: relative;
     font-family: Arial;
 text-align: center;
-    color: orange;
+    color: #101010; /* black */
 font-size:150%;
 }
 
 .centered {
     position: absolute;
     top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 10%;
+    transform: translate(-5%, -50%);
 }
 
 .container .btn {
@@ -177,7 +177,7 @@ font-size:150%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color:lightgreen;
+    background-color:#29c1aa;
     color: black;
     font-size: 16px;
     padding: 12px 24px;
@@ -189,7 +189,7 @@ font-size:150%;
 }
 
 .container .btn:hover {
-    background-color: white;
+    background-color: #2e6da4;
 }
 </style>
 
@@ -220,7 +220,7 @@ font-size:150%;
 			
 			<ul class="nav navbar-nav navbar-right">
 			 
-			    <li><a href="#">&nbsp;En | ???</a></li>
+			    <li><a href="#">&nbsp;En | বাং</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
 			    <li><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
@@ -273,42 +273,37 @@ font-size:150%;
 	<p><br/></p>
 	<p><br/></p>
 	<p><br/></p>
-	<div class="container-fluid">
-		
-			<div class="col-md-12 col-xs-15">
-				<div class="row">
-					<div class="col-md-12 col-xs-15" id="product_msg">
-					</div>
-				</div>
-				
-				<div class="panel panel-info">
-		
-		<!--<div class="panel-heading">Products</div>-->
-					
-</div>
-
-<!------------------------------------Join with us------------------------------------------------->		
-<div class="panel panel-info">
-<div class="panel-heading"><center><b><h3>Join With Us</h3></b></center></div>	
-				<div class="panel panel-info">
-				<div class="card">
-		<div class="panel-body">
-					
-</div></div>
-			
-				</div>
-				</div>
-                                                                   
+	
+<!-------------------------------------  Container ------------------------------------------------------->	
+	
  <div class="container">
-  <img src="slide_images/join_with_us.jpg" height="500px" width="1300px"> <div class="centered">
-   <b><p>FRESHY FOOD CORPORATE</p></b>
-   <b> <p>Freshy Food is the newest dedicated online food ordering retailer with more than 5,000 subscribers and 50+ business customers across Dhaka. Our corporate customers can enjoy FREE delivery of fresh food produce, office items, cleaning goods and much more � all from one place and at a discounted price for bulk orders. We have friendly staff who are committed to serve you better</p></b>
-  
-</div>
-<button class="btn "><a href="Supplier_Corporate.php">Sign up</button>
+  <img src="slide_images/corporate.jpg"  style="width: 100%; height:100%;"> 
+  <div class="centered">
+    <p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
+   <b><p><h2>FRESHY FOOD CORPORATE</h2></p></b>
+   <b><p><font size="3">Freshy Food is the newest dedicated online food ordering retailer. We are a startup and we should be nurtured with utmost care.
+   When you care about Freshy Food, we will care about you. If you like comfy chair and lazy life, this job is not for you.
+   If you think you can add value with your expertise and hard-work, you might be the ONE we are looking for.</p></b>
+    <p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
+  </div>
+<button class="btn"><a style="color:#fff;" href="Supplier_Corporate.php">Sign up</button></a>
 </div>
 				
-				</br>
+</br>
+
+
+
+
+
+
+
+
+
+				
 <!-------------------------------------footer------------------------------------------------------->
 
 
@@ -326,6 +321,7 @@ font-size:150%;
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
   <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
   <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="Supplier_Corporate.php" style="text-decoration:none">Career</a></li></li>
   </br>
   </div>
    <div class="col-md-3" >

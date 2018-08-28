@@ -414,24 +414,25 @@ font-size:150%;
 
 <!------------------------------------Join with us------------------------------------------------->		
 <div class="panel panel-info">
-<div class="panel-heading"><center><b><h3>Join With Us</h3></b></center></div>	
+<div class="panel-heading"><center><b><h3>Want to Join With Freshy Food</h3></b></center></div>	
 				<div class="panel panel-info">
-				<div class="card">
+				
 		<div class="panel-body">
 					
-</div></div>
+</div>
 			
 				</div>
 				
                                                                    
  <div class="container">
+ <div class="card">
   <img src="slide_images/join with us.jpg" height="230px" width="100%"> 
   <div class="centered">
    <b><p>Do you want to be a corporate customer?</p></b>
-   <b> <p>Join with  FreshyFood</p></b>
+   
   </div>
 <button class="btn "><a style="color:#fff;" href="Supplier_Corporate.php">join with us</button></a>
-
+</div>
 </div>
 </br>
 </div>
@@ -454,6 +455,7 @@ font-size:150%;
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
   <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
   <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="Supplier_Corporate.php" style="text-decoration:none">Career</a></li></li>
   </br>
   </div>
    <div class="col-md-3" >
