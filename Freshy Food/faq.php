@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+
+        <meta charset="UTF-8">
+		<title>FreshyFood</title>
+		<link rel="shortcut icon" href="freshyFood.ico">
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<script src="js/jquery2.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style></style>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -11,17 +25,49 @@
 	<script src="faq/js/modernizr.js"></script> <!-- Modernizr -->
 	<title>FAQ </title>
 </head>
-<body>
+<body oncontextmenu="return false;">
+<div class="wait overlay">
+	<div class="loader"></div>
+</div>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">	
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+					<span class="sr-only">navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.php" class="navbar-brand" style="font-family:Jokerman;color:white">FreshyFood</a>
+			</div>
+		<div class="collapse navbar-collapse" id="collapse">
+			<ul class="nav navbar-nav">
+				 
+				<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
+				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Search</button></li>
+			</ul>
+			
+			<ul class="nav navbar-nav navbar-right">
+			 
+			    <li><a href="#">&nbsp;En | বাং</a></li>
+				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
+			    <li><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+		</div>
+	</div>
+	</div>
+	<p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
 <header>
 	<h1>FAQs of Freshy Food</h1>
 </header>
 <section class="cd-faq">
 	<ul class="cd-faq-categories">
-		<li><a class="selected" href="#basics">General</a></li>
-		<li><a href="#mobile">Products</a></li>
-		<li><a href="#account">Formalin</a></li>
+		<li><a class="selected" href="#general">General</a></li>
+		<li><a href="#products">Products</a></li>
+		<li><a href="#formalin">Formalin</a></li>
 		<li><a href="#payments">Payments</a></li>
-		<li><a href="#privacy">Policy</a></li>
+		<li><a href="#policy">Policy</a></li>
 		<li><a href="#delivery">Delivery</a></li>
 	</ul> <!-- cd-faq-categories -->
 
@@ -38,205 +84,150 @@
 			<li>
 				<a class="cd-faq-trigger" href="#0">How do I know when my order is here?</a>
 				<div class="cd-faq-content">
-					<p> </p>
+					<p>A Freshy Food representative will call you as soon as they are at your house to let you know about your delivery. </p>
                 </div					<!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">Can I remove a post?</a>
+				<a class="cd-faq-trigger" href="#0">Do you serve my area?</a>
 				<div class="cd-faq-content">
-					<p> </p>
+					<p>Freshy Food is currently serving all of Dhaka city, except certain parts of Old town. </p>
                 </div <!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">How do reviews work?</a>
+				<a class="cd-faq-trigger" href="#0">My order is wrong. What do I do?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div <!-- cd-faq-content -->
+					<p>Please Immediately call +880-188-1234-567 and let us know the problem. </p>
+                </div> <!-- cd-faq-content -->
 			</li>
 		</ul> <!-- cd-faq-group -->
 
-		<ul id="mobile" class="cd-faq-group">
-			<li class="cd-faq-title"><h2>Mobile</h2></li>
+		<ul id="products" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Products</h2></li>
 			<li>
-				<a class="cd-faq-trigger" href="#0">How does syncing work?</a>
+				<a class="cd-faq-trigger" href="#0">What about the prices?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div<!-- cd-faq-content -->
+					<p>Our prices are our own but we try our best to offer them to you at or below market prices. Our prices are the same as the local market and we are working hard to get them even lower! If you feel that any product is priced unfairly, please let us know. </p>
+                </div><!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">How do I upload files from my phone or tablet?</a>
+				<a class="cd-faq-trigger" href="#0">What about quality?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div <!-- cd-faq-content -->
+					<p>We try our best to source the best quality items for you but if you are dissatisfied, you can always send them back with the delivery person. If you forget to do that, you can call us within 3 days and we will replace the item for free. </p>
+                </div> <!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">How do I link to a file or folder?</a>
+				<a class="cd-faq-trigger" href="#0">How are you sourcing your products?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div <!-- cd-faq-content -->
+					<p>We have deals with popular whole-sellers, manufacturers and importers. We only sell organic, fresh and healthy products. </p>
+                </div> <!-- cd-faq-content -->
 			</li>
 		</ul> <!-- cd-faq-group -->
 
-		<ul id="account" class="cd-faq-group">
-			<li class="cd-faq-title"><h2>Account</h2></li>
+		<ul id="formalin" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Formalin</h2></li>
 			<li>
-				<a class="cd-faq-trigger" href="#0">How do I change my password?</a>
+				<a class="cd-faq-trigger" href="#0">How long your formalin detection will take?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div<!-- cd-faq-content -->
+					<p>It will take only few munites to ensure you about your product freshness. </p>
+                </div><!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">How do I delete my account?</a>
+				<a class="cd-faq-trigger" href="#0">When will you detec formalin?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div<!-- cd-faq-content -->
+					<p>Freshy Food will provide you live formalin detection while delivering our product to your door steps. </p>
+                </div><!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">How do I change my account settings?</a>
+				<a class="cd-faq-trigger" href="#0">How will I ensure about your formalin Test</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div<!-- cd-faq-content -->
+					<p>If the mixer becomes yellow or colorless then it insures the presences of formalin.If it becomes blue or green then it means there is no formalin.  </p>
+                </div><!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">I forgot my password. How do I reset it?</a>
+				<a class="cd-faq-trigger" href="#0">If I want to detect formalin then how will I detect it with your kit?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div <!-- cd-faq-content -->
+					<p>Pick one drop of formalin tester mix with test tube water and sake it for 5 seconds and wait for the results. </p>
+                </div> <!-- cd-faq-content -->
 			</li>
 		</ul> <!-- cd-faq-group -->
 
 		<ul id="payments" class="cd-faq-group">
 			<li class="cd-faq-title"><h2>Payments</h2></li>
 			<li>
-				<a class="cd-faq-trigger" href="#0">Can I have an invoice for my subscription?</a>
+				<a class="cd-faq-trigger" href="#0">How do I pay?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div <!-- cd-faq-content -->
+					<p>We accept cash on delivery and we also have Online Credit Card and Online Bkash service. Don’t worry, our Freshy Food representatives should always carry enough change. </p>
+                </div> <!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">Why did my credit card or PayPal payment fail?</a>
+				<a class="cd-faq-trigger" href="#0">What about the prices?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div<!-- cd-faq-content -->
+					<p>Our prices are our own but we try our best to offer them to you at or below market prices. Our prices are the same as the local market and we are working hard to get them even lower! If you feel that any product is priced unfairly, please let us know. </p>
+                </div><!-- cd-faq-content -->
 			</li>
 
 			<li>
 				<a class="cd-faq-trigger" href="#0">Why does my bank statement show multiple charges for one upgrade?</a>
 				<div class="cd-faq-content">
 					<p> </p>
-                </div<!-- cd-faq-content -->
+                </div><!-- cd-faq-content -->
 			</li>
 		</ul> <!-- cd-faq-group -->
 
-		<ul id="privacy" class="cd-faq-group">
-			<li class="cd-faq-title"><h2>Privacy</h2></li>
+		<ul id="policy" class="cd-faq-group">
+			<li class="cd-faq-title"><h2>Policy</h2></li>
 			<li>
-				<a class="cd-faq-trigger" href="#0">Can I specify my own private key?</a>
+				<a class="cd-faq-trigger" href="#0">What is your policy on refunds?</a>
 				<div class="cd-faq-content">
-					<p> </p>
-                </div>!-- cd-faq-content -->
+					<p>You may get a refund within seven (7) days on unopened or spoilt packaged products. For diapers and perishable products, such as milk, fruits and fresh vegetables, we have a one (1) day return policy. We will not accept any diaper items as return if more than 20% of the pack has been used. We reserve the right to refuse refund. Please contact us at +880-188-1234-567 if you want to return an item. </p>
+                </div><!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">My files are missing! How do I get them back?</a>
+				<a class="cd-faq-trigger" href="#0">What is your discounting policy?</a>
 				<div class="cd-faq-content">
-					<p> </p>
+					<p>We try to provide the best deals in Dhaka and many of our products are already discounted below the maximum retail price (MRP). We also offer discount codes under special circumstances, which are applied on the MRP. On any given product, we can only apply one type of discount. We always consider the best discount available to the customer. For example: If the MRP of a product is Tk. 100 and our list price is Tk. 92 -- the product is already sold at a 8% discount. This means that if user applies a discount code for 5% discount, we will still consider the best discount available to the user and sell the product at Tk. 92. </p>
                 </div> <!-- cd-faq-content -->
 			</li>
 
-			<li>
-				<a class="cd-faq-trigger" href="#0">How can I access my account data?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div> <!-- cd-faq-content -->
-			</li>
-
-			<li>
-				<a class="cd-faq-trigger" href="#0">How can I control if other search engines can link to my profile?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div> <!-- cd-faq-content -->
-			</li>
-		</ul> <!-- cd-faq-group -->
 
 		<ul id="delivery" class="cd-faq-group">
 			<li class="cd-faq-title"><h2>Delivery</h2></li>
 			<li>
-				<a class="cd-faq-trigger" href="#0">What should I do if my order hasn't been delivered yet?</a>
+				<a class="cd-faq-trigger" href="#0">What are your delivery hours?</a>
 				<div class="cd-faq-content">
-					<p> </p>
+					<p>We deliver from 8 am to 10 pm every day. You can choose from available slots to find something that is convenient to you. </p>
                 </div> <!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">How can I find your international delivery information?</a>
+				<a class="cd-faq-trigger" href="#0">How long do the deliveries take?</a>
 				<div class="cd-faq-content">
-					<p> </p>
+					<p>We are serving with 1 Hour Delivery Service to Azimpur, Badda, Banani, Banasree, Baridhara, Bashundhara RA, Cantonment, DOHS Banani, DOHS Baridhara, DOHS Mohakhali, Dhaka University, Dhanmondi, Eskaton, Farmgate, Gulshan, Kakrail, Kalabagan, Khilgaon, Mirpur, Mohakhali, Moghbazaar, Mohammadpur, Motijheel, Niketon, Nikunja, Pallabi, Paltan, Ramna, Rampura, Tejgaon, Uttara, DOHS Mirpur, Adabor, Shaymoli, Paikpara, Malibag, Gabtoli, Kallyanpur, Agargaon, Wari, Pink City, Uttar Khan, Dakshin Khan. For the rest of the Dhaka city we are currently delivering within 4-7 hours timeframe.  You can also specify a convenient time and we will send the products during that time. </p>
                 </div> <!-- cd-faq-content -->
 			</li>
 
 			<li>
-				<a class="cd-faq-trigger" href="#0">Who takes care of shipping?</a>
+				<a class="cd-faq-trigger" href="#0">What happens abou you delivery during a hartal?</a>
 				<div class="cd-faq-content">
-					<p> </p>
+					<p>We work during hartals. That’s how dedicated we are. </p>
                 </div>  <!-- cd-faq-content -->
 			</li>
 
-			<li>
-				<a class="cd-faq-trigger" href="#0">How do returns or refunds work?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div>  <!-- cd-faq-content -->
-			</li>
-
-			<li>
-				<a class="cd-faq-trigger" href="#0">How do I use shipping profiles?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div>  <!-- cd-faq-content -->
-			</li>
-
-			<li>
-				<a class="cd-faq-trigger" href="#0">How does your UK Next Day Delivery service work?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div>  <!-- cd-faq-content -->
-			</li>
-
-			<li>
-				<a class="cd-faq-trigger" href="#0">How does your Next Day Delivery service work?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div>  <!-- cd-faq-content -->
-			</li>
-
-			<li>
-				<a class="cd-faq-trigger" href="#0">When will my order arrive?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div>  <!-- cd-faq-content -->
-			</li>
-
-			<li>
-				<a class="cd-faq-trigger" href="#0">When will my order ship?</a>
-				<div class="cd-faq-content">
-					<p> </p>
-                </div> <!-- cd-faq-content -->
-			</li>
 		</ul> <!-- cd-faq-group -->
 	</div> <!-- cd-faq-items -->
 	<a href="#0" class="cd-close-panel">Close</a>
 </section> <!-- cd-faq -->
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="faq/js/jquery-2.1.1.js"></script>
+<script src="faq/js/jquery.mobile.custom.min.js"></script>
+<script src="faq/js/main.js"></script> <!-- Resource jQuery -->
 </body>
 </html>
