@@ -83,7 +83,137 @@ return false;
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
+								<div class="row">
+									<div class="col-md-3 col-xs-3">Sl.No</div>
+									<div class="col-md-3 col-xs-3">Product Image</div>
+									<div class="col-md-3 col-xs-3">Product Name</div>
+									<div class="col-md-3 col-xs-3">Price in Tk</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div id="cart_product">
+								<!--<div class="row">
+									<div class="col-md-3">Sl.No</div>
+									<div class="col-md-3">Product Image</div>
+									<div class="col-md-3">Product Name</div>
+									<div class="col-md-3">Price in Tk</div>
+								</div>-->
+								</div>
+							</div>
+							<div class="panel-footer"></div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo "Hi,".$_SESSION["name"]; ?></a>
+					<ul class="dropdown-menu">
+						<li><a href="cart.php" style="text-decoration:none; color:#bf1515;"><span class="glyphicon glyphicon-shopping-cart">Cart</a></li>
+						<li class="divider"></li>
+						<li><a href="customer_order.php" style="text-decoration:none; color:#bf1515;">Orders</a></li>
+						<li class="divider"></li>
+						<li><a href="" style="text-decoration:none; color:#bf1515;">Change Password</a></li>
+						<li class="divider"></li>
+						<li><a href="logout.php" style="text-decoration:none; color:#bf1515;">Logout</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+	<p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-2">
+				<div id="get_category">
+				</div>
+				
+				<div id="get_brand">
+				</div>
+				
+			</div>
+			<div class="col-md-8">	
+				<div class="row">
+					<div class="col-md-12 col-xs-12" id="product_msg">
+					</div>
+				</div>
+				<div class="panel panel-info" id="scroll">
+					<div class="panel-heading"><center><b>Products</b></center></div>
+					<div class="panel-body">
+						<center><div id="get_product">
+							
+						</div></center>
+						
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<center>
+					<ul class="pagination" id="pageno">
+						<li><a href="#">1</a></li>
+					</ul>
+				</center>
+			</div>
+		</div>
+	</div>
+	
+	<!-------------------------------------footer------------------------------------------------------->
+
+
+<div class="card">
+
+<div class="panel-footer">
+								
+  <ul style="list-style-type:none" >
+  <center>
+  <div class="row">
 			
+    <div class="col-md-3" >
+  <li><style="text-decoration:none"><h4>Our Services:</h4></li>
+  <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
+  <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
+  <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="Supplier_Corporate.php" style="text-decoration:none">Career</a></li></li>
+  </br>
+  </div>
+   <div class="col-md-3" >
+  <li><style="text-decoration:none"><h4>Our Products:</h4></li>
+  <li><a href="phome.php" style="text-decoration:none">Fruits</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Vegetables</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Baverages</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Gift Basket</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Dairy</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Packages</a></li>
+  </br>
+  </div>
+  <div class="col-md-6" >
+   <li><style="text-decoration:none"><h4>Payment Options:</h4></li></br>
+  <li><span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
+  </center>
+  </div>
+  </div>
+  </div>
+  <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
