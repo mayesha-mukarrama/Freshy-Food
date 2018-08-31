@@ -126,8 +126,6 @@ return false;
 	<p><br/></p>
 	<p><br/></p>
 
-<div><style<h1>Are you New!!</h1> 
-<a href="customer_registration.php?register=1">Create a new account?</a></div>
 
 				 <!-------------------------------------footer------------------------------------------------------->
 
