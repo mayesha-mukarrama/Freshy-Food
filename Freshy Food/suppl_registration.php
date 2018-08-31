@@ -9,7 +9,7 @@ if(isset($_SESSION["uid"])){
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Freshy Food</title>
+		<title>FreshyFood</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
@@ -57,16 +57,18 @@ return false;
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">	
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand">Freshy Food</a>
+				<a href="index.php" class="navbar-brand" style="font-family:Jokerman;color:white">FreshyFood</a>
 			</div>
+		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
-				<<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
+				 
+				<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
 				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Search</button></li>
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right">
 			 
-			    <li><a href="#">&nbsp;En |  বাং</a></li>
+			    <li><a href="#">&nbsp;En | বাং</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
 			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				</div>
@@ -87,9 +89,8 @@ return false;
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<div class="panel panel-primary">
-					<div class="panel-heading">Supplier/Vendor SignUp Form</div>
+					<div class="panel-heading">Customer Login Form</div>
 					<div class="panel-body">
-					
 					<form id="signup_form" onsubmit="return false">
 						<div class="row">
 							<div class="col-md-6">
