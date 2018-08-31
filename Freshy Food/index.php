@@ -431,7 +431,7 @@ font-size:150%;
    <b><p>Do you want to be a corporate customer?</p></b>
    
   </div>
-<button class="btn "><a style="color:#fff;" href="Supplier_Corporate.php">join with us</button></a>
+<button class="btn "><a style="color:#fff;" href="Supplier/Supplier_Corporate.php">join with us</button></a>
 </div>
 </div>
 </br>
