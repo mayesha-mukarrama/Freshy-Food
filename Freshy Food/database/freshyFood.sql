@@ -39,7 +39,8 @@ CREATE TABLE `supplier_info` (
   `supplier_id` int(15) NOT NULL,
   `first_name` varchar(100) NOT NULL,
   `last_name` varchar(100) NOT NULL,
-  `password` varchar(250) NOT NULL,
+ `username` varchar(100) NOT NULL,
+ `password` varchar(250) NOT NULL,
   `mobile` varchar(15) NOT NULL,
   `address1` varchar(250) NOT NULL,
   `address2` varchar(15) NOT NULL
@@ -49,9 +50,9 @@ CREATE TABLE `supplier_info` (
 -- Inserting data for table `supplier_info`
 --
 
-INSERT INTO `supplier_info` (`supplier_id`, `first_name`, `last_name`, `password`, `mobile`, `address1`, `address2`) VALUES
-(1, 'Rafiqul', 'Islam ', '1234', '01718885698', 'Mirpur-10', 'Dhaka'),
-(2, 'Shafiq', 'Rahman', '4567', '01712241178', 'Jigatola', 'dhaka');
+INSERT INTO `supplier_info` (`supplier_id`, `first_name`, `last_name`,`username`, `password`, `mobile`, `address1`, `address2`) VALUES
+(1, 'Rafiqul', 'Islam ', 'Rafiq', '1234', '01718885698', 'Mirpur-10', 'Dhaka'),
+(2, 'Shafiq', 'Rahman', 'Shafiq',  '4567', '01712241178', 'Jigatola', 'dhaka');
 
 
 --

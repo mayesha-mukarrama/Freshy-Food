@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 session_start();
 if(isset($_SESSION["uid"])){
 	header("location:profile.php");
@@ -290,7 +290,7 @@ font-size:150%;
 	<p><br/></p>
 	<p><br/></p>
   </div>
-<button class="btn"><a style="color:#fff;" href="Supplier_Corporate.php">Sign up</button></a>
+<button class="btn"><a style="color:#fff;" href="Suppl_registration.php">Sign up</button></a>
 </div>
 				
 </br>
