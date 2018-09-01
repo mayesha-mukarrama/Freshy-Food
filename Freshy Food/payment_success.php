@@ -188,6 +188,12 @@ return false;
   <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
 </div>
 
+
+
+<!------------------live chat--------------------->
+	<?php include 'chat.php';?>
+	<!------------------//live chat---------------------> 
+	
 	
 </body>
 </html>
