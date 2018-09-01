@@ -1,3 +1,11 @@
+-- phpMyAdmin SQL Dump
+-- version 4.5.1
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 28, 2018 at 01:24 PM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -9,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `freshyFood`
+-- Database: `freshyfood`
 --
 
 -- --------------------------------------------------------
@@ -24,14 +32,14 @@ CREATE TABLE `adminlog` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Inserting data for table `adminlog`
+-- Dumping data for table `adminlog`
 --
 
 INSERT INTO `adminlog` (`username`, `password`) VALUES
 ('admin', 'admin');
 
 -- --------------------------------------------------------
---
+
 -- Table structure for table `supplier_info`
 --
 
@@ -39,8 +47,7 @@ CREATE TABLE `supplier_info` (
   `supplier_id` int(15) NOT NULL,
   `first_name` varchar(100) NOT NULL,
   `last_name` varchar(100) NOT NULL,
- `username` varchar(100) NOT NULL,
- `password` varchar(250) NOT NULL,
+  `password` varchar(250) NOT NULL,
   `mobile` varchar(15) NOT NULL,
   `address1` varchar(250) NOT NULL,
   `address2` varchar(15) NOT NULL
@@ -50,10 +57,32 @@ CREATE TABLE `supplier_info` (
 -- Inserting data for table `supplier_info`
 --
 
-INSERT INTO `supplier_info` (`supplier_id`, `first_name`, `last_name`,`username`, `password`, `mobile`, `address1`, `address2`) VALUES
-(1, 'Rafiqul', 'Islam ', 'Rafiq', '1234', '01718885698', 'Mirpur-10', 'Dhaka'),
-(2, 'Shafiq', 'Rahman', 'Shafiq',  '4567', '01712241178', 'Jigatola', 'dhaka');
+INSERT INTO `supplier_info` (`supplier_id`, `first_name`, `last_name`, `password`, `mobile`, `address1`, `address2`) VALUES
+(1, 'Rafiqul', 'Islam ', '1234', '01718885698', 'Mirpur-10', 'Dhaka'),
+(2, 'Shafiq', 'Rahman', '4567', '01712241178', 'Jigatola', 'dhaka');
 
+
+--
+-- Table structure for table `brands`
+--
+
+CREATE TABLE `brands` (
+  `brand_id` int(100) NOT NULL,
+  `brand_title` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `brands`
+--
+
+INSERT INTO `brands` (`brand_id`, `brand_title`) VALUES
+(1, 'Kazi Store'),
+(2, 'Rajshahi Shop'),
+(3, 'Rahman Store'),
+(4, 'Fruit Store'),
+(5, 'Freshfood Store');
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `cart`
@@ -68,14 +97,13 @@ CREATE TABLE `cart` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Inserting data for table `cart`
+-- Dumping data for table `cart`
 --
 
 INSERT INTO `cart` (`id`, `p_id`, `ip_add`, `user_id`, `qty`) VALUES
-(18, 1, '::1', 1, 1),
 (19, 2, '::1', 1, 1),
-(20, 1, '127.0.0.1', 1, 1);
-
+(20, 1, '127.0.0.1', -1, 1),
+(21, 2, '127.0.0.1', -1, 1);
 
 -- --------------------------------------------------------
 
@@ -91,17 +119,17 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Inserting data for table `categories`
+-- Dumping data for table `categories`
 --
 
 INSERT INTO `categories` (`cat_id`, `cat_title`, `creationDate`, `updationDate`) VALUES
-(1, 'Fruit', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
-(2, 'Vegetable', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
-(3, 'Gift Basket', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
-(4, 'Dairy', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
-(5, 'Baverage', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
-(6, 'Offers', '2018-07-24 15:38:07', '0000-00-00 00:00:00'),
-(7, 'Packages', '2018-07-24 15:38:07', '0000-00-00 00:00:00');
+(1, 'Fruit', '2018-08-13 15:38:07', '2018-08-08 10:38:00'),
+(2, 'Vegetable', '2018-08-20 06:38:07', '2018-08-18 03:47:00'),
+(3, 'Gift Basket', '2018-06-27 04:38:07', '2018-07-10 09:43:37'),
+(4, 'Dairy', '2018-07-29 13:38:07', '2018-08-04 05:43:26'),
+(5, 'Baverage', '2018-08-25 08:48:45', '2018-09-02 02:41:48'),
+(6, 'Offers', '2018-08-31 06:41:10', '2018-09-20 12:43:37'),
+(7, 'Packages', '2018-09-27 15:38:07', '2018-08-28 15:45:35');
 
 -- --------------------------------------------------------
 
@@ -119,40 +147,19 @@ CREATE TABLE `orders` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Inserting data for table `orders`
+-- Dumping data for table `orders`
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `product_id`, `qty`, `trx_id`, `p_status`) VALUES
 (22, 3, 1, 1, '3', 'Completed'),
 (23, 3, 4, 1, '3', 'Completed'),
 (24, 3, 15, 1, '3', 'Completed'),
-(25, 3, 36, 1, '3', 'Completed'),
+(25, 3, 56, 1, '3', 'Completed'),
+(26, 3, 51, 1, '3', 'Completed'),
+(27, 3, 69, 1, '3', 'Completed'),
 (28, 3, 8, 1, '3', 'Completed');
 
-
 -- --------------------------------------------------------
---
--- Table structure for table `user_review`
---
-
-CREATE TABLE `user_review` (
- 
-  `first_name` varchar(20) NOT NULL,
-  `last_name` varchar(20) NOT NULL,
-  `image` text NOT NULL,
-  `review` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
---
--- Inserting data for table `user_info`
---
-INSERT INTO `user_review` (`first_name`, `last_name`, `image`, `review` ) VALUES
-('Lisa', 'Rahman' ,'j1.jpg', 'Loved the service! I urgently needed some stuffs and ordered it here and they delivered in less than an hour as promised! Thanks a lot for that.'),
-('Nazia', 'Haque','j2.jpg', 'Fantastic service, usually on time and prompt in responding if anything needs to be changed.'),
-('Ayesha', 'Siddique','j3.jpg', 'Satisfied by their professionalism ! Got my products in time. Didnot have to pay any delivery charge. I canot believe that. Keep it up !'),
-('Halima', 'Ahmed', 'j4.jpg',' I am loving this experience and Have been shopping from here and i have recommended my relatives too. They are also happy with the service. The prices are comparatively low and the products are genuine.');
-
 
 --
 -- Table structure for table `products`
@@ -161,6 +168,7 @@ INSERT INTO `user_review` (`first_name`, `last_name`, `image`, `review` ) VALUES
 CREATE TABLE `products` (
   `product_id` int(100) NOT NULL,
   `product_cat` int(100) NOT NULL,
+  `product_brand` int(100) NOT NULL,
   `product_title` varchar(255) NOT NULL,
   `product_price` int(100) NOT NULL,
   `product_desc` text NOT NULL,
@@ -169,62 +177,70 @@ CREATE TABLE `products` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Inserting data for table `products`
+-- Dumping data for table `products`
 --
 
-INSERT INTO `products` (`product_id`, `product_cat`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
-(1, 1, 'Mango', 60, '1kg ', 'mango.jpg', 'mango'),
-(2, 1, 'lychee', 500, ' 100pcs', 'lychee.jpeg', 'lychee'),
-(3, 1, 'Apple', 120, ' 1kg', 'apple.jpg', 'apple'),
-(4, 1, 'Banana ', 65, '12pcs ', 'banana.jpg', 'banana'),
-(5, 2, 'Carrot ', 35, '1kg', 'carrot.jpg', 'carrot'),
-(6, 2, 'Lemon ', 20, '4pcs', 'lemon.jpg', 'lemon '),
-(7, 2, 'Aloe vera ', 30, '4pcs', 'aloe.png', 'aloe vera'),
-(8, 2, 'Onion ', 40, '1kg', 'onion.jpg', 'onion'),
-(9, 3, 'Mango Basket', 1200, '5kg Himsagar Mango', 'mango basket.jpg', 'mango basket'),
-(10, 3, 'Fruits basket', 1000, '5 apple, 12 banana, .5kg grape', 'fruits basket.jpg', 'basket '),
-(11, 3, 'Regular Fruits basket', 1600, '2 apple, 2 pineapple, .5kg grape', 'regular.png', 'basket'),
-(12, 4, 'Organic ghee', 450, ' 350gm', 'ghee.jpg', 'organic ghee'),
-(13, 4, 'Fresh Milk', 70, ' 1L', 'milk.jpg', 'fresh milk'),
-(14, 4, 'Organic Honey', 500, ' 250gm', 'honey.jpg', 'organic honey'),
-(15, 4, 'Yogurt ', 70, '500gm', 'yogurt.jpg', 'Yogurt'),
-(16, 5, 'Orange Juice', 600, ' 1L', 'orange juice.jpg', 'orange juice'),
-(17, 5, 'Mango juice', 1000, ' 1L', 'mango juice.jpg', 'mango juice'),
-(19, 5, 'Green Coconut ', 60, '1pcs', 'coconut water.jpg', 'coconut water'),
-(20, 6, 'Special offer', 1200, '25% off in 25 kg mangoes', 'offer.jpg', 'offer'),
-(21, 6, 'Rajshahi Mango', 300, 'Buy 5kg mango get 1kg free', 'mango.jpg', 'mango'),
-(22, 6, 'Apple', 720, 'Buy 6kg apple get 1kg free', 'apple.jpg', 'apple'),
-(23, 7, 'Fruit packages', 1750, '8 Bananas, 4 apples, .5kg grape', 'fruit.jpg', 'fruit'),
-(24, 7, 'Kids packages', 1850, 'black berry, green berry, grapes', 'kids.jpg', 'fruit'),
-(25, 7, 'wedding packages', 1550, '5kg  Himsagar Mango', 'wedding.jpg', 'fruit'),
-(26, 7, 'Birthday packages', 650, 'Fruit Bouquet', 'birthday packages.jpg', 'fruit'),
-(27, 1, 'Orange ', 120, '1kg', 'orange.jpg', 'orange'),
-(28, 1, 'Guava ', 60, '1kg', 'guava.jpg', 'guava'),
-(29, 2, 'Tomato ', 50, '1kg', 'tomato.jpg', 'tomato'),
-(30, 2, 'Potato ', 50, '1kg', 'potato.jpg', 'potato'),
-(31, 2, 'Capsicum ', 80, '1kg', 'capsicum.jpg', 'capsicum'),
-(32, 3, 'Vegetable Basket', 1120, 'Tomato, cucumber, carrot', 'vegetable basket.jpg', 'vegetable'),
-(33, 3, 'Fruit & Vegetable', 1520, 'Capsicum, Grape, Banana', 'fruit & vegetable.jpg', 'vegetable'),
-(34, 3, 'Birthday Basket', 750, 'Orange, Mango, Apple', 'birthday basket.jpg', 'basket'),
-(35, 3, 'Kids Basket', 820, 'Apple, Banana, Orange', 'kids basket.jpg', 'basket'),
-(36, 4, 'Egg ', 115, '12pcs', 'egg.jpg', 'egg'),
-(37, 4, 'Butter ', 220, '250gm', 'butter.jpg', 'butter'),
-(38, 4, 'Cheese ', 228, '250gm', 'cheese.jpg', 'cheese'),
-(39, 5, 'Grape Juice ', 420, '1L', 'grape juice.jpg', 'grape juice'),
-(40, 5, 'Strawberry Juice ', 690, '1L', 'strawberry juice.jpg', 'juice'),
-(41, 5, 'Aloe vera drink ', 450, '1L', 'aloe drink.jpg', 'aloe vera'),
-(42, 6, 'Seasonal offer', 490, '10% off', 'apple.jpg', 'offer'),
-(44, 6, 'Buy 2L Juice get 250 ml free', 690, 'Buy 2L Juice get 250 ml free', 'grape juice.jpg', 'juice'),
-(45, 7, 'Friend package', 520, 'Lychee, apple, orange, mango', 'friend package.jpg', 'package'),
-(46, 7, 'Strawberry package', 100, '1kg boxed strawberry', 'strawberry.jpg', 'package'),
-(47, 7, 'Salad packages', 290, 'Strawberry, berry, mango', 'salad.jpg', 'packages'),
-(48, 3, 'Heart Shaped Basket', 820, '2kg Strawberry', 'heart.jpg', 'basket'),
-(49, 4, 'Quail Egg ', 100, '12pcs', 'quail.jpg', 'egg'),
-(50, 3, 'Special Basket', 550, 'Grapes, Apples, Oranges', 'special.jpg', 'basket'),
-(51, 3, 'Fruit Bouquets', 820, 'Flower shaped fruit', 'flower.jpg', 'basket');
+INSERT INTO `products` (`product_id`, `product_cat`, `product_brand`, `product_title`, `product_price`, `product_desc`, `product_image`, `product_keywords`) VALUES
+(1, 1, 4, 'Mango 1kg', 60, 'Mango ', 'mango.jpg', 'mango'),
+(2, 1, 5, 'lychee 100pcs', 500, 'Lychee', 'lychee.jpeg', 'lychee'),
+(3, 1, 3, 'Apple 1kg', 120, 'Apple', 'apple.jpg', 'apple'),
+(4, 1, 2, 'Banana 12pcs', 65, 'Banana ', 'banana.jpg', 'banana'),
+(5, 2, 1, 'Carrot 1kg', 35, 'Carrot', 'carrot.jpg', 'carrot'),
+(6, 2, 3, 'Lemon 4pcs', 20, 'Lemon', 'lemon.jpg', 'lemon '),
+(7, 2, 4, 'Aloe vera 4pcs', 30, 'Aloe vera', 'aloe.png', 'aloe vera'),
+(8, 2, 1, 'Onion 1kg', 40, 'Onion', 'onion.jpg', 'onion'),
+(9, 3, 2, 'Mango Basket', 1200, 'Mango Basket', 'mango basket.jpg', 'mango basket'),
+(10, 3, 5, 'Fruits basket', 1000, 'Fruits basket', 'fruits basket.jpg', 'basket '),
+(11, 3, 4, 'Regular Fruits basket', 1600, 'Regular Fruits basket', 'regular.png', 'basket'),
+(12, 4, 1, 'Organic ghee 350gm', 450, 'Organic ghee', 'ghee.jpg', 'organic ghee'),
+(13, 4, 2, 'Fresh Milk 1L', 70, 'Fresh Milk', 'milk.jpg', 'fresh milk'),
+(14, 4, 3, 'Organic Honey 250gm', 500, 'Organic Honey', 'honey.jpg', 'organic honey'),
+(15, 4, 1, 'Yogurt 500gm', 70, 'Yogurt', 'yogurt.jpg', 'Yogurt'),
+(16, 5, 4, 'Orange Juice 1L', 600, 'Orange Juice', 'orange juice.jpg', 'orange juice'),
+(17, 5, 2, 'Mango juice 1L', 1000, 'Mango juice', 'mango juice.jpg', 'mango juice'),
+(19, 5, 5, 'Green Coconut 1pcs', 60, 'Green Coconut', 'coconut water.jpg', 'coconut water'),
+(20, 6, 2, 'Special offer', 1600, 'Special offer', 'offer.jpg', 'offer'),
+(21, 6, 5, 'Buy 5kg mango get 1kg free', 300, 'Buy 5kg mango get 1kg free', 'mango.jpg', 'mango'),
+(22, 6, 4, 'Buy 6kg apple get 1kg free ', 720, 'Buy 6kg apple get 1kg free', 'apple.jpg', 'apple'),
+(23, 7, 5, 'Fruit packages', 1750, 'Fruit packages', 'fruit.jpg', 'fruit'),
+(24, 7, 1, 'Kids packages', 1850, 'Kids packages', 'kids.jpg', 'fruit'),
+(25, 7, 2, 'wedding packages', 1550, 'wedding packages', 'wedding.jpg', 'fruit'),
+(26, 7, 3, 'Birthday packages', 650, 'Birthday packages', 'birthday packages.jpg', 'fruit'),
+(27, 1, 3, 'Orange 1kg', 120, 'Orange', 'orange.jpg', 'orange'),
+(28, 1, 2, 'Guava 1kg', 60, 'Guava', 'guava.jpg', 'guava'),
+(29, 2, 2, 'Tomato 1kg', 50, 'Tomato', 'tomato.jpg', 'tomato'),
+(30, 2, 2, 'Potato 1kg', 50, 'Potato', 'potato.jpg', 'potato'),
+(31, 2, 2, 'Capsicum 1kg', 80, 'Capsicum', 'capsicum.jpg', 'capsicum'),
+(32, 3, 1, 'Vegetable Basket', 1120, 'vegetable Basket', 'vegetable basket.jpg', 'vegetable'),
+(33, 3, 4, 'Fruit & Vegetable', 1520, 'Fruit & Vegetable', 'fruit & vegetable.jpg', 'vegetable'),
+(34, 3, 3, 'Birthday Basket', 750, 'Birthday Basket', 'birthday basket.jpg', 'basket'),
+(35, 3, 5, 'Kids Basket', 820, 'Kids Basket', 'kids basket.jpg', 'basket'),
+(36, 4, 1, 'Egg 12pcs', 115, 'Egg', 'egg.jpg', 'egg'),
+(37, 4, 1, 'Butter 250gm', 220, 'Butter', 'butter.jpg', 'butter'),
+(38, 4, 2, 'Cheese 250gm', 228, 'Cheese', 'cheese.jpg', 'cheese'),
+(39, 5, 4, 'Grape Juice 1L', 420, 'Grape Juice', 'grape juice.jpg', 'grape juice'),
+(40, 5, 5, 'Strawberry Juice 1L', 690, 'strawberry juice', 'strawberry juice.jpg', 'juice'),
+(41, 5, 3, 'Aloe vera drink 1L', 450, 'Aloe vera drink', 'aloe drink.jpg', 'aloe vera'),
+(42, 6, 2, 'Seasonal offer', 490, 'seasonal offer', 'seasonal.jpg', 'offer'),
+(44, 6, 5, 'Buy 2L Grape Juice get 250 ml free', 690, 'Buy 2L Grape Juice get 250 ml free', 'grape juice.jpg', 'juice'),
+(45, 7, 3, 'Friend package', 520, 'Friend package', 'friend package.jpg', 'package'),
+(46, 7, 4, 'Strawberry package', 100, 'stawberry package', 'strawberry.jpg', 'package'),
+(47, 7, 2, 'Salad packages', 290, 'Salad packages', 'salad.jpg', 'packages'),
+(48, 3, 5, 'Heart Shaped Basket', 820, 'Heart Shaped Basket', 'heart.jpg', 'basket'),
+(49, 4, 1, 'Quail Egg 12pcs', 100, 'Quail Egg', 'quail.jpg', 'egg'),
+(50, 3, 2, 'Special Basket', 550, 'Special Basket', 'special.jpg', 'basket'),
+(51, 3, 5, 'Fruit Bouquets', 820, 'Fruit Bouquets', 'flower.jpg', 'basket');
 
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `sellerlog`
+--
 
+CREATE TABLE `sellerlog` (
+  `username` varchar(30) NOT NULL,
+  `password` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -244,21 +260,44 @@ CREATE TABLE `user_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Inserting data for table `user_info`
+-- Dumping data for table `user_info`
 --
 
 INSERT INTO `user_info` (`user_id`, `first_name`, `last_name`, `email`, `password`, `mobile`, `address1`, `address2`) VALUES
-(3, 'Harry', 'Potter ', 'harry@harry.com', '098765', '0123456789', 'Mirpur-1', 'Dhaka'),
-(2, 'm', 'mm', 'mayesha@gmail.com', '123456', '1234567890', 'dhaka', 'dhaka');
+(3, 'Harry', 'Potter ', 'harry@harry.com', '09814fbde59286ba051615745bac613a', '0123456789', 'Mirpur-1', 'Dhaka');
+
+-- --------------------------------------------------------
 
 --
--- Primary Key Indexes for tables
+-- Table structure for table `user_review`
 --
+
+CREATE TABLE `user_review` (
+  `first_name` varchar(20) NOT NULL,
+  `last_name` varchar(20) NOT NULL,
+  `image` text NOT NULL,
+  `review` varchar(150) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
--- Indexes for table `supplier_info`
+-- Dumping data for table `user_review`
 --
-ALTER TABLE `supplier_info`
-  ADD PRIMARY KEY (`supplier_id`);
+
+INSERT INTO `user_review` (`first_name`, `last_name`, `image`, `review`) VALUES
+('Lisa', 'Rahman', 'j1.jpg', 'Loved the service! I urgently needed some stuffs and ordered it here and they delivered it.'),
+('Nazia', 'Haque', 'j2.jpg', 'Fantastic service, usually on time and prompt in responding if anything needs to be changed.'),
+('Ayesha', 'Siddique', 'j3.jpg', 'Satisfied by their professionalism ! Got my products in time. Did not have to pay any delivery charge.'),
+('Halima', 'Ahmed', 'j4.jpg', ' I am loving this experience and Have been shopping from here and i have recommended my relatives too.');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `brands`
+--
+ALTER TABLE `brands`
+  ADD PRIMARY KEY (`brand_id`);
 
 --
 -- Indexes for table `cart`
@@ -291,12 +330,16 @@ ALTER TABLE `user_info`
   ADD PRIMARY KEY (`user_id`);
 
 --
--- AUTO_INCREMENT for tables
+-- AUTO_INCREMENT for dumped tables
 --
--- AUTO_INCREMENT for table `supplier_info`
+
 --
-ALTER TABLE `supplier_info`
-  MODIFY `supplier_id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+-- AUTO_INCREMENT for table `brands`
+--
+ALTER TABLE `brands`
+  MODIFY `brand_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+--
+-- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
@@ -309,14 +352,19 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 --
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `product_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 --
 -- AUTO_INCREMENT for table `user_info`
+
+ AUTO_INCREMENT for table `supplier_info`
+--
+ALTER TABLE `supplier_info`
+  MODIFY `supplier_id` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 ALTER TABLE `user_info`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
