@@ -1,9 +1,11 @@
-﻿<?php
+<?php
 session_start();
 if(isset($_SESSION["uid"])){
 	header("location:profile.php");
 }
 ?>
+
+	
 <!DOCTYPE html>
 <html>
 	<head>
@@ -54,6 +56,8 @@ return false;
 }
 }
 </script>
+
+
 <!------------------------------------------------------------------------------------------------------>
 
 <script>
@@ -111,7 +115,10 @@ $(document).ready(function(){
 
     
     }
- 
+  </style>
+  
+   
+  <style>
 .card {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -125,7 +132,11 @@ $(document).ready(function(){
 .container {
     padding: 2px 16px;
 }
+</style>
 
+
+
+<style>
 * {
     box-sizing: border-box;
 }
@@ -142,7 +153,9 @@ $(document).ready(function(){
     clear: both;
     display: table;
 }
+</style>
 
+<style>
 .container {
     position: relative;
     font-family: Arial;
@@ -183,13 +196,10 @@ font-size:150%;
 	</head>
 	
 <body oncontextmenu="return false;">
-
 <div class="wait overlay">
 	<div class="loader"></div>
 </div>
-
 	<div class="navbar navbar-inverse navbar-fixed-top">
-		
 	<div class="card">
 		<div class="container-fluid">	
 			<div class="navbar-header">
@@ -271,14 +281,6 @@ font-size:150%;
 					</div>
 				</div>
 				
-				
-				
-	<!------------------live chat--------------------->
-	<?php include 'chat.php';?>
-	<!------------------//live chat--------------------->
-	
-				
-				
 				<div class="panel panel-info">
 		
 		<!--<div class="panel-heading">Products</div>-->
@@ -340,11 +342,16 @@ font-size:150%;
 				<img src="slide_images/b1.jpg" height="100%" width="100%">		
 						
 								
-</div></div>
+        </div>
+</div>
 			
 				</div>
 				
 				</br>
+				
+				
+				
+
 <!-----------------------------------Why will you love Freshy food--------------------------------------------------------->			
 <div class="panel panel-info">
 <div class="panel-heading"><center><b><h3>Why will you love Freshy Food</h3></b></center></div>
@@ -401,9 +408,11 @@ font-size:150%;
 				<img src="slide_images/delivery.png" height="200px" width="100%">		
 			
 				</br>
+				
+				
 <!----------------------------Customer opinion---------------------------------------------------------------->
         <div class="panel panel-info">
-            <div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
+          <div class="panel-heading"><center><b><h3>What our client saying</h3></b></center></div>
 			<div class="panel panel-info">
 				<div class="card">
 		            <div class="panel-body" id="myview">											
@@ -438,7 +447,10 @@ font-size:150%;
 </div>
 </br>
 </div>
-				
+		
+
+
+
 				
 <!-------------------------------------footer------------------------------------------------------->
 
@@ -480,6 +492,7 @@ font-size:150%;
   <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
 </div>
 
-	
+
 </body>
 </html>
+
