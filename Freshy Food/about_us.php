@@ -63,7 +63,7 @@
 			 
 			    <li style="font-size:14px;"><a href="#">&nbsp;En | বাং</a></li>
 				<li style="font-size:14px;"><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
-			    <li style="font-size:14px;"><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+			    <li style="font-size:14px;"><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				<li style="font-size:14px;"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
@@ -169,26 +169,26 @@
                             </div>
                         </div>
 						<div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
+                            <div class="card-header" role="tab" id="headingFour">
                                 <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-core="" href="#collapse3_0" aria-expanded="false" aria-controls="collapse3">
                                     <h4 class="mbr-fonts-style display-5">
                                         <span class="sign mbr-iconfont mbri-arrow-down inactive"></span>&nbsp;Verified suppliers</h4>
                                 </a>
                             </div>
-                            <div id="collapse3_0" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_0">
+                            <div id="collapse3_0" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#bootstrap-accordion_0">
                                 <div class="panel-body p-4">
                                     <p class="mbr-fonts-style panel-text display-7"><font size="4">Every time we take any of our service partner on our marketplace, they have to go through a 2 step verification of their company and their employees.</p>
                                 </div>
                             </div>
                         </div>
 						<div class="card">
-                            <div class="card-header" role="tab" id="headingThree">
+                            <div class="card-header" role="tab" id="headingFive">
                                 <a role="button" class="collapsed panel-title text-black" data-toggle="collapse" data-core="" href="#collapse3_0" aria-expanded="false" aria-controls="collapse3">
                                     <h4 class="mbr-fonts-style display-5">
                                         <span class="sign mbr-iconfont mbri-arrow-down inactive"></span>&nbsp;Creating Value</h4>
                                 </a>
                             </div>
-                            <div id="collapse3_0" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_0">
+                            <div id="collapse3_0" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFive" data-parent="#bootstrap-accordion_0">
                                 <div class="panel-body p-4">
                                     <p class="mbr-fonts-style panel-text display-7"><font size="4">At Freshy Food, our approach to social impact is a natural extension of our vision to become the world’s most respected food brand. In a world of social change and environmental imperatives, a brand that stands for trust, health and fresh is more important than ever.</p>
                                 </div>
@@ -301,7 +301,7 @@
 																																													
 						</div>
                 </div>  						
-				<center><a href="#" class="button">Fix an Appointment</a><?center>
+				<center><a href="#" class="button">Fix an Appointment</a><center>
 <!--------------------------------//owner images----------------------------------------------->
 
                         <div class="card p-3 pr-3">
@@ -390,6 +390,7 @@
 
 		 
 
+	
 
 		 <!-------------------------------------footer------------------------------------------------------->
 <div class="card">
@@ -406,6 +407,7 @@
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
   <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
   <li><a href="about_us.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="Supplier_Corporate.php" style="text-decoration:none">Career</a></li></li>
   </br>
   </div>
    <div class="col-md-3" >
@@ -428,6 +430,10 @@
   <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
 </div>
 
+<!------------------live chat--------------------->
+	<?php include 'chat.php';?>
+	<!------------------//live chat---------------------> 
 	
 </body>
 </html>
+
