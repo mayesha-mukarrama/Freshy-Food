@@ -111,10 +111,7 @@ $(document).ready(function(){
 
     
     }
-  </style>
-  
-   
-  <style>
+ 
 .card {
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
@@ -128,11 +125,7 @@ $(document).ready(function(){
 .container {
     padding: 2px 16px;
 }
-</style>
 
-
-
-<style>
 * {
     box-sizing: border-box;
 }
@@ -149,9 +142,7 @@ $(document).ready(function(){
     clear: both;
     display: table;
 }
-</style>
 
-<style>
 .container {
     position: relative;
     font-family: Arial;
@@ -192,10 +183,13 @@ font-size:150%;
 	</head>
 	
 <body oncontextmenu="return false;">
+
 <div class="wait overlay">
 	<div class="loader"></div>
 </div>
+
 	<div class="navbar navbar-inverse navbar-fixed-top">
+		
 	<div class="card">
 		<div class="container-fluid">	
 			<div class="navbar-header">
@@ -276,6 +270,14 @@ font-size:150%;
 					<div class="col-md-12 col-xs-15" id="product_msg">
 					</div>
 				</div>
+				
+				
+				
+	<!------------------live chat--------------------->
+	<?php include 'chat.php';?>
+	<!------------------//live chat--------------------->
+	
+				
 				
 				<div class="panel panel-info">
 		
@@ -431,7 +433,7 @@ font-size:150%;
    <b><p>Do you want to be a corporate customer?</p></b>
    
   </div>
-<button class="btn "><a style="color:#fff;" href="Supplier/Supplier_Corporate.php">join with us</button></a>
+<button class="btn "><a style="color:#fff;" href="Supplier_Corporate.php">join with us</button></a>
 </div>
 </div>
 </br>

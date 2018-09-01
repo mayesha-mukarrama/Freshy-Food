@@ -13,7 +13,7 @@
 }
 
 .chat-closed {
-    width: 250px;
+    width: 300px;
     height: 35px;
     background:#101010;
     line-height: 35px;
@@ -25,7 +25,7 @@
 }
 
 .chat-header {
-    width: 250px;
+    width: 300px;
     height: 35px;
     background: #101010;
     line-height: 33px;
@@ -37,7 +37,7 @@
 }
 
 .chat-content{
-    width:250px;
+    width:300px;
     height:300px;
     background:#ffffff;
     border:1px solid #777;
@@ -49,7 +49,7 @@
 .box{
     width:10px;
     height:10px;
-    background:green;
+    background:#29c1aa;
     float:left;
     position:relative;
     top: 11px;
@@ -63,7 +63,7 @@
     display:none;
 }
 
-.container {
+.chat-container {
     border: 2px solid #dedede;
     background-color: #f1f1f1;
     border-radius: 5px;
@@ -76,35 +76,25 @@
     background-color: #ddd;
 }
 
-.container::after {
+.chat-container::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.container img {
+.chat-container img {
     float: left;
     max-width: 60px;
-    width: 100%;
-    margin-right: 20px;
+    width: 20%;
     border-radius: 50%;
 }
 
-.container img.right {
+.chat-container img.right {
     float: right;
     margin-left: 20px;
     margin-right:0;
 }
 
-.time-right {
-    float: right;
-    color: #aaa;
-}
-
-.time-left {
-    float: left;
-    color: #999;
-}
 
 </style>
 </head>
@@ -117,16 +107,25 @@
 <p style= "padding-left:10px" ><font size="2">Have any question?</p>
 <p style= "padding-left:10px"><font size="2">Take online support!!</p>
 
-<div class="container">
+<div class="chat-container">
   <img src="slide_images/chat.jpg" alt="Avatar" style="width:100%;">
-  <p><font size="2">Assalamualaikum. How can Freshy Food help you?</p>
-  <span class="time-right">11:00</span>
+  <p  style="float: left; padding-top:15px;  padding-left:5px; text-color:#29c1aa;"><font size="2">Assalamualaikum.<br>
+  How can Freshy Food help you?</p>  
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="chat-container" style="float: bottom; padding-bottom:10px">
+  <span style="float: left; padding-left:5px"><i> your message...</i></span>
+  <a href="#"><span style="float: right; padding-left:5px" class="glyphicon glyphicon-phone"></span>
+  <span style="float: right; padding-left:5px" class="glyphicon glyphicon-thumbs-up"></span></a>
+</div>
+</div>
 </div>
 
-
-
-</div>
-</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
