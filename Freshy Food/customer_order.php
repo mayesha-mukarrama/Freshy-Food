@@ -53,9 +53,19 @@ return false;
 </script>
 	</head>
 <body oncontextmenu="return false;">
+<div class="wait overlay">
+	<div class="loader"></div>
+</div>
 	<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="card">
 		<div class="container-fluid">	
 			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
+					<span class="sr-only">navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 				<a href="index.php" class="navbar-brand" style="font-family:Jokerman;color:white">FreshyFood</a>
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
@@ -69,8 +79,50 @@ return false;
 			 
 			    <li><a href="#">&nbsp;En | বাং</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
-			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+			    <li><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
+					<div class="dropdown-menu" style="width:400px;">
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-md-3">Sl.No</div>
+									<div class="col-md-3">Product Image</div>
+									<div class="col-md-3">Product Name</div>
+									<div class="col-md-3">Price in Tk.</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div id="cart_product">
+								
+								</div>
+							</div>
+							<div class="panel-footer"></div>
+						</div>
+					</div>
+				</li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;<?php echo "Hi,".$_SESSION["name"]; ?></a>
+					<ul class="dropdown-menu">
+						<li><a href="cart.php" style="text-decoration:none; color:#bf1515;"><span class="glyphicon glyphicon-shopping-cart">Cart</a></li>
+						<li class="divider"></li>
+						<li><a href="customer_order.php" style="text-decoration:none; color:#bf1515;">Orders</a></li>
+						<li class="divider"></li>
+						<li><a href="" style="text-decoration:none; color:#bf1515;">Change Password</a></li>
+						<li class="divider"></li>
+						<li><a href="logout.php" style="text-decoration:none; color:#bf1515;">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
 		</div>
+	</div>
+	
+ </div>
+</div> 
+	
+	<p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
+		</div>
+	</div>
 	</div>
 	<p><br/></p>
 	<p><br/></p>
@@ -123,6 +175,7 @@ return false;
 	</div>
 
 	
+	
 	<!-------------------------------------footer------------------------------------------------------->
 
 
@@ -163,46 +216,14 @@ return false;
 </div>
 
 	
+	
+<!------------------live chat--------------------->
+	<?php include 'chat.php';?>
+	<!------------------//live chat--------------------->
+	
+	
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
