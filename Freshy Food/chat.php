@@ -3,6 +3,7 @@
 <head>
 
 <title>Live chatbox</title>
+
 <style type="text/css">
 .chat-box {
     position:fixed;
@@ -10,6 +11,7 @@
     bottom:0;
     box-shadow:0 0 0.1em #000;
 	border-radius:8px;
+	background-image:url("slide_images/background.png");
 }
 
 .chat-closed {
@@ -38,8 +40,8 @@
 
 .chat-content{
     width:300px;
-    height:300px;
-    background:#ffffff;
+    height:350px;
+    background-image:url("slide_images/background.png");
     border:1px solid #777;
     overflow-y:auto;
     word-wrap: break-word;
@@ -69,6 +71,7 @@
     border-radius: 5px;
     padding: 10px;
     margin: 10px 0;
+	border-radius:8px;
 }
 
 .darker {
@@ -103,9 +106,8 @@
 <button class="chat-closed"><span class="glyphicon glyphicon-menu-up"></span>&nbsp;</span>Chat Now</button>
 <div class="chat-header hide"><div class="box"></div>Live Chat</div>
 <div class="chat-content hide">
-
-<p style= "padding-left:10px" ><font size="2">Have any question?</p>
-<p style= "padding-left:10px"><font size="2">Take online support!!</p>
+<br>
+<center><p style= "padding-left:10px; color:#29c1aa;"><font size="3">We are Team Freshy Food! We are ready to help</p></center>
 
 <div class="chat-container">
   <img src="slide_images/chat.jpg" alt="Avatar" style="width:100%;">
@@ -116,11 +118,11 @@
 <br>
 <br>
 <br>
-<br>
+
 
 <div class="chat-container" style="float: bottom; padding-bottom:10px">
   <span style="float: left; padding-left:5px"><i> your message...</i></span>
-  <a href="#"><span style="float: right; padding-left:5px" class="glyphicon glyphicon-phone"></span>
+  <a href="#"><span style="float: right; padding-left:5px" class="glyphicon glyphicon-earphone"></span>
   <span style="float: right; padding-left:5px" class="glyphicon glyphicon-thumbs-up"></span></a>
 </div>
 </div>
