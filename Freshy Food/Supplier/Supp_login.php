@@ -1,20 +1,39 @@
 ﻿<?php
-#this is Login form page , if user is already logged in then we will not allow user to access this page by executing isset($_SESSION["uid"])
-#if below statment return true then we will send user to their profile.php page
-if (isset($_SESSION["uid"])) {
-	header("location:profile.php");
+session_start();
+error_reporting(0);
+include("include/config.php");
+if(isset($_POST['submit']))
+{
+	$username=$_POST['username'];
+	//$password=md5($_POST['password']);
+	  $password=$_POST['password'];
+$ret=mysql_query("SELECT * FROM supplier_info WHERE username='$username' and password='$password'");
+$num=mysql_fetch_array($ret);
+if($num>0)
+{
+$extra="change-password.php";//
+$_SESSION['alogin']=$_POST['username'];
+$_SESSION['id']=$num['id'];
+$host=$_SERVER['HTTP_HOST'];
+$uri=rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
+header("location:http://$host$uri/$extra");
+exit();
 }
-//in action.php page if user click on "ready to checkout" button that time we will pass data in a form from action.php page
-if (isset($_POST["login_user_with_product"])) {
-	//this is product list array
-	$product_list = $_POST["product_id"];
-	//here we are converting array into json format because array cannot be store in cookie
-	$json_e = json_encode($product_list);
-	//here we are creating cookie and name of cookie is product_list
-	setcookie("product_list",$json_e,strtotime("+1 day"),"/","","",TRUE);
-
+else
+{
+$_SESSION['errmsg']="Invalid username or password";
+$extra="index.php";
+$host  = $_SERVER['HTTP_HOST'];
+$uri  = rtrim(dirname($_SERVER['PHP_SELF']),'/\\');
+header("location:http://$host$uri/$extra");
+exit();
+}
 }
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -99,6 +118,11 @@ return false;
 			<div class="col-md-4"></div>
 			<div class="col-md-4">
 				<div class="panel panel-primary">
+<div class="module module-login span4 offset4">
+<form class="form-vertical" method="post">
+				 
+						</div>
+					
 					<div class="panel-heading">Supplier/Vendor Login Form</div>
 					<div class="panel-body">
 						<!--User Login Form-->
@@ -108,7 +132,8 @@ return false;
 							<label for="ID">Password</label>
 							<input type="password" class="form-control" name="password" id="password" required/>
 							<p><br/></p>
-							<a href="#" style="color:#333; list-style:none;">Forgotten Password</a><input type="submit" class="btn btn-success" style="float:right;" Value="Login">
+
+							<a href="#" style="color:#333; list-style:none;">Forgotten Password</a><button type="submit" class="btn btn-primary pull-right" style="float:right;" name="submit">Login</button>
 							<!--If user dont have an account then he/she will click on create account button-->
 								
 					</form>
