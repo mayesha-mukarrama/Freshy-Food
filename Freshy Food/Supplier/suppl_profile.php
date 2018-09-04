@@ -1,10 +1,20 @@
 ﻿<?php
-session_start();
-if(isset($_SESSION["uid"])){
+#this is Login form page , if user is already logged in then we will not allow user to access this page by executing isset($_SESSION["uid"])
+#if below statment return true then we will send user to their profile.php page
+if (isset($_SESSION["uid"])) {
 	header("location:profile.php");
 }
-?>
+//in action.php page if user click on "ready to checkout" button that time we will pass data in a form from action.php page
+if (isset($_POST["login_user_with_product"])) {
+	//this is product list array
+	$product_list = $_POST["product_id"];
+	//here we are converting array into json format because array cannot be store in cookie
+	$json_e = json_encode($product_list);
+	//here we are creating cookie and name of cookie is product_list
+	setcookie("product_list",$json_e,strtotime("+1 day"),"/","","",TRUE);
 
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -49,7 +59,6 @@ return false;
 }
 }
 </script>
-
 	</head>
 <body oncontextmenu="return false;">
 <div class="wait overlay">
@@ -58,7 +67,7 @@ return false;
 	<div class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container-fluid">	
 			<div class="navbar-header">
-				<a href="Freshy Food/index.php" class="navbar-brand" style="font-family:Jokerman;color:white">FreshyFood</a>
+				<a href="index.php" class="navbar-brand" style="font-family:Jokerman;color:white">FreshyFood</a>
 			</div>
 		<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
@@ -69,7 +78,7 @@ return false;
 			
 			<ul class="nav navbar-nav navbar-right">
 			 
-			    <li><a href="#">&nbsp;En | বাং</a></li>
+			    <li><a href="#">&nbsp;En |  বাং</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
 			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
 				</div>
@@ -78,91 +87,9 @@ return false;
 	<p><br/></p>
 	<p><br/></p>
 	<p><br/></p>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8" id="signup_msg">
-				<!--Alert from signup form-->
-			</div>
-			<div class="col-md-2"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Supplier SignUp Form</div>
-					<div class="panel-body">
-					<form id="signup_form" onsubmit="return false">
-						<div class="row">
-							<div class="col-md-6">
-								<label for="f_name">First Name</label>
-								<input type="text" id="f_name" name="f_name" class="form-control">
-							</div>
-							<div class="col-md-6">
-								<label for="f_name">Last Name</label>
-								<input type="text" id="l_name" name="l_name"class="form-control">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<label for="username">UserName</label>
-								<input type="text" id="username" name="username"class="form-control">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<label for="password">password</label>
-								<input type="password" id="password" name="password"class="form-control">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<label for="repassword">Re-enter Password</label>
-								<input type="password" id="repassword" name="repassword"class="form-control">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<label for="mobile">Mobile</label>
-								<input type="text" id="mobile" name="mobile"class="form-control">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<label for="address1">Address Line 1</label>
-								<input type="text" id="address1" name="address1"class="form-control">
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<label for="address2">Address Line 2</label>
-								<input type="text" id="address2" name="address2"class="form-control">
-							</div>
-						</div>
-						<p><br/></p>
-						<div class="row">
-							<div class="col-md-12">
-<input style="width:100%;" value="Sign Up" type="submit" name="signup_button"class="btn btn-success btn-lg">
-	
-								
-							</div>
-						</div>
-<!--If user have an account then he/she will click on create account button-->
-<div>
-<h3>Already have an account? <a href="supp_login.php?register=1">Sign In</a>.</h3>
-</div>						
-						
-					</div>
-					</form>
-					<div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
-				</div>
-			</div>
-			<div class="col-md-2"></div>
-		</div>
-	</div>
-<p><br/></p>
-<p><br/></p>
-<p><br/></p>
+
+
+
 
 <!-------------------------------------footer------------------------------------------------------->
 
@@ -206,22 +133,6 @@ return false;
 	
 </body>
 </html>
-
-<?php
-
-
-
-
-?>
-
-
-
-
-
-
-
-
-
 
 
 
