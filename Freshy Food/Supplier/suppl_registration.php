@@ -149,7 +149,7 @@ return false;
 						</div>
 <!--If user have an account then he/she will click on create account button-->
 <div>
-<h3>Already have an account? <a href="supp_login.php?register=1">Sign In</a>.</h3>
+<h3>Already have an account? <a href="Supp_login.php?register=1">Sign In</a>.</h3>
 </div>						
 						
 					</div>
