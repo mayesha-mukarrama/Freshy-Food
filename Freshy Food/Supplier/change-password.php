@@ -7,7 +7,7 @@ if(strlen($_SESSION['alogin'])==0)
 header('location:index.php');
 }
 else{
-date_default_timezone_set('Asia/Bangladesh');// change according timezone
+date_default_timezone_set('Asia/Kolkata');// change according timezone
 $currentTime = date( 'd-m-Y h:i:s A', time () );
 
 
@@ -70,7 +70,21 @@ return false;
 }
 }
 </script>
+<style>
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    width: 100%;
+}
+
+.card:hover {
+     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+	</style>
 </head>
+<body>
+
+	
 <body oncontextmenu="return false;">
 <div class="wait overlay">
 	<div class="loader"></div>
@@ -98,38 +112,22 @@ return false;
 	<p><br/></p>
 	<p><br/></p>
 	<p><br/></p>
-<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-2"></div>
-			<div class="col-md-8" id="signup_msg">
-				<!--Alert from signup form-->
-			</div>
-			<div class="col-md-2"></div>
-		</div>
-		<div class="row">
-			<div class="col-md-4"></div>
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-	
 
-<?php include('include/header.php');?>
 
 	<div class="wrapper">
 		<div class="container">
 		
 			<div class="row">
 <?php include('include/sidebar.php');?>				
-			<div class="panel-heading">Supplier/Vendor Profile Form</div>
-					<div class="panel-body">
-						<!--User Login Form-->
-						<form onsubmit="return false" id="password">
-							<label for="currentpassword">Current Password</label>
-							<input type="password" class="form-control" name="password" id="password" required/>
-							<label for="ID"> New Password</label>
-							<input type="password" class="form-control" name="password" id="password" required/>
-<label for="ID"> Confirm Password</label>
-							<input type="password" class="form-control" name="password" id="password" required/>
-							<p><br/></p>
+			<div class="span9">
+					<div class="content">
+
+						<div class="module">
+						   <div class="card">
+							<div class="module-head">
+								<h3>Supplier Change Password</h3>
+							</div>
+							<div class="module-body">
 
 									<?php if(isset($_POST['submit']))
 {?>
@@ -188,7 +186,8 @@ return false;
 		</div><!--/.container-->
 	</div><!--/.wrapper-->
 
-div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;FreshyFood&nbsp;All rights reserved</center><div id="e_msg"></div></div>
+</div>
+				<div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;FreshyFood&nbsp;All rights reserved</center><div id="e_msg"></div></div>
 			</div>
 		</div>
 		<div class="col-md-4"></div>
@@ -241,7 +240,14 @@ div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px"
 	
 </body>
 </html>
+</body>
 <?php } ?>
+
+
+
+
+
+
 
 
 
