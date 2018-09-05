@@ -97,11 +97,12 @@ return false;
 	<div class="loader"></div>
 </div>
 	<div class="navbar navbar-inverse navbar-fixed-top">
+
 		<div class="container-fluid">	
 			<div class="navbar-header">
 				<a href="index.php" class="navbar-brand" style="font-family:Jokerman;color:white">FreshyFood</a>
-			</div>
-		<div class="collapse navbar-collapse" id="collapse">
+</div>
+<div class="collapse navbar-collapse" id="collapse">
 			<ul class="nav navbar-nav">
 				 
 				<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
@@ -113,9 +114,28 @@ return false;
 			    <li><a href="#">&nbsp;En |  বাং</a></li>
 				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
 			    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+<ul class="nav pull-right">
+						<li><a href="#">
+							Supplier
+						</a></li>
+
+						<li class="nav-user dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<img src="images/user.png" class="nav-avatar" />
+								<b class="caret"></b>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="change-password.php">Change Password</a></li>
+								<li class="divider"></li>
+								<li><a href="logout.php">Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				
 				</div>
 		</div>
 	</div>
+
 	<p><br/></p>
 	<p><br/></p>
 	<p><br/></p>
