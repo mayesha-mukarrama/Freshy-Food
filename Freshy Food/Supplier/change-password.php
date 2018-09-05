@@ -142,11 +142,15 @@ return false;
 
 
 	<div class="wrapper">
+
+<?php include('include/sidebar.php');?>
+
 		<div class="container">
 		
 			<div class="row">
-<?php include('include/sidebar.php');?>				
+				
 			<div class="span9">
+
 					<div class="content">
 
 						<div class="module">
@@ -156,7 +160,8 @@ return false;
 							</div>
 							<div class="module-body">
 
-									<?php if(isset($_POST['submit']))
+
+<?div>									<?php if(isset($_POST['submit']))
 {?>
 									<div class="alert alert-success">
 										<button type="button" class="close" data-dismiss="alert">×</button>
