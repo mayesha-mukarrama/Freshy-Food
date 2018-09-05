@@ -15,7 +15,7 @@ if(isset($_SESSION["uid"])){
 		<script src="js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		<style></style>
+	
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript">
 $(function() {
@@ -60,11 +60,34 @@ return false;
      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.container {
-    padding: 2px 16px;
+</style>
+<style>
+/* Float four columns side by side */
+.column1 {
+  float: left;
+  width: 33.33%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row1 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 </style>
-}</style>
 	</head>
 <body oncontextmenu="return false;">
 <div class="wait overlay">
@@ -182,69 +205,51 @@ return false;
 <div class="card">
 
 <div class="panel-footer">
-								
-  <ul style="list-style-type:none" >
-  <center>
-  <li><style="text-decoration:none"><h4>Our Services:</h4></li>
+			
+<div class="row1">
+<div class="column1">
+<p><ul style="list-style-type:none";>
+  <li><h4>Our Services:</h4></li>
   <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
   <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
-  <li><a href="#" style="text-decoration:none">FAQ</a></li></li>
-  <li><a href="#" style="text-decoration:none">About Us</a></li></li>
-  </br>
-   <li><style="text-decoration:none"><h4>Payment Options</h4></li></br>
-  <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
-  </center>
+  <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="about.php" style="text-decoration:none">About Us</a></li></li>
+  <li><a href="/freshyfood/Supplier/Supplier_Corporate.php" style="text-decoration:none">Career</a></li></li></ul></p>
+ </div>
+
+<div class="column1">
+<p><ul style="list-style-type:none";>
+   <li><h4>Our Products:</h4></li>
+  <li><a href="phome.php" style="text-decoration:none">Fruits</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Vegetables</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Baverages</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Gift Basket</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Dairy</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Packages</a></li></ul></p>
+ </div>
+
+ 
+ <div class="column1">
+<p>
+<ul style="list-style-type:none";>
+ <li><h4>Payment Options:</h4></li>
+  <li style="margin-bottom:7px;"><span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span></li>
+   
+   <li style="margin-bottom:7px;"><img src="slide_images/bkash.png"></li>
+   
+   <li style="margin-bottom:7px;"><img src="slide_images/rocket.png"></li>
+
+   <li style="margin-bottom:7px;"><img src="slide_images/ucash.png"></li>
+   </ul></p>
+  
+</div>
+
+
+  
   </div>
   <div class="panel-footer"><center>Copyright © 2018 FreshyFood All rights reserved</center></div>
+</div>
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
