@@ -56,7 +56,7 @@ $num1 = mysql_num_rows($rt);
 							</li>-->
 							
 						<ul class="widget widget-menu unstyled">
-                                <li><a href="Supp_profile.php"><i class="menu-icon icon-tasks"></i> Profile </a></li>	
+                                <li><a href="suppl_profile.php"><i class="menu-icon icon-tasks"></i> Profile </a></li>	
 
 						<ul class="widget widget-menu unstyled">
                                 <li><a href="category.php"><i class="menu-icon icon-tasks"></i> Create Category </a></li>
