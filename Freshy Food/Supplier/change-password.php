@@ -30,8 +30,15 @@ $_SESSION['msg']="Old Password not match !!";
 <html>
 	<head>
 		<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>FreshyFood</title>
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link type="text/css" href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link type="text/css" href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+	<link type="text/css" href="css/theme.css" rel="stylesheet">
+	<link type="text/css" href="images/icons/css/font-awesome.css" rel="stylesheet">
+	<link type="text/css" href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600' rel='stylesheet'>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="main.js"></script>
@@ -133,8 +140,7 @@ return false;
 {?>
 									<div class="alert alert-success">
 										<button type="button" class="close" data-dismiss="alert">×</button>
-										<?php echo htmlentities($_SESSION['msg']);?><?php echo htmlentities($_SESSION['msg']="");?>
-									</div>
+										<span style="color:red;" ><center><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></center></span>							</div>
 <?php } ?>
 									<br />
 

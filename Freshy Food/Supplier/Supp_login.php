@@ -124,6 +124,7 @@ return false;
 						</div>
 					
 					<div class="panel-heading">Supplier/Vendor Login Form</div>
+<span style="color:red;" ><center><?php echo htmlentities($_SESSION['errmsg']); ?><?php echo htmlentities($_SESSION['errmsg']="");?></center></span>
 					<div class="panel-body">
 						<!--User Login Form-->
 						<form onsubmit="return false" id="login">
