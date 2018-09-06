@@ -1,47 +1,23 @@
-
+<!DOCTYPE html>
 <html>
 	<head>
-        <meta charset="UTF-8">
+		<meta charset="UTF-8">
 		<title>FreshyFood</title>
 		<link rel="shortcut icon" href="freshyFood.ico">
 		<link rel="stylesheet" href="css/bootstrap.min.css"/>
 		<script src="js/jquery2.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style></style>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
-		 
-
-  <title>Payment Process</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
-  
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-		<style>
-		
-		.button {
-    background-color: #101010; /* black */
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-</style>
-		</head>
+	</head>
+	
 		<body oncontextmenu="return false;">
 <div class="wait overlay">
 	<div class="loader"></div>
 </div>
 	<div class="navbar navbar-inverse navbar-fixed-top">
-	<div class="card">
 		<div class="container-fluid">	
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
@@ -56,15 +32,15 @@
 			<ul class="nav navbar-nav">
 				 
 				<li style="width:230px;left:10px;top:10px;"><input type="text" class="form-control" id="search" placeholder="Search"></li>
-				<li style="left:10px;top:5px; bottom: 10px"><button class="btn btn-primary" id="search_btn"><font size="2">Search</button></li>
+				<li style="top:10px;left:20px;"><button class="btn btn-primary" id="search_btn">Search</button></li>
 			</ul>
 			
 			<ul class="nav navbar-nav navbar-right">
 			 
-			    <li style="font-size:14px;"><a href="#">&nbsp;En | বাং</a></li>
-				<li style="font-size:14px;"><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
-			    <li style="font-size:14px;"><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
-				<li style="font-size:14px;"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
+			    <li><a href="#">&nbsp;En | বাং</a></li>
+				<li><a href="phome.php"><span class="glyphicon glyphicon-home"></span>&nbsp;Product</a></li>				
+			    <li><a href="contact_us.php"><span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact Us</a></li>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Cart&nbsp;<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width:400px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
@@ -84,7 +60,7 @@
 						</div>
 					</div>
 				</li>
-				<li style="font-size:14px;"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;SignIn</a>
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>&nbsp;SignIn</a>
 					<ul class="dropdown-menu">
 						<div style="width:300px;">
 							<div class="panel panel-primary">
@@ -104,28 +80,72 @@
 						</div>
 					</ul>
 				</li>
-			</ul>
+			</ul>	
 		</div>
 	</div>
-	
- </div>
-</div> 
+	</div>
+	<p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
 
-
-       <img src="slide_images/payment.jpg"  style="width:100%; height:300px;">
+       <img src="slide_images/payment.jpg"  style="width:100%; height:350px;">
 <marquee><font color=red><h4>A Best Way To Buy Fresh Food In Online</h4></font></marquee> 
 
 		
-               <center> <a href="bikash.com"><img src="slide_images/bkash.png" width="90" height="50"><a href="paypal.com"><img src="slide_images/paypal.jpg" width="90" height="50"><a href="debitcard.com"><img src="slide_images/DebitCard.jpg" width="90" height="50"><a href="creditcard.com"><img src="slide_images/CreditCard.png" width="90" height="50"></center>
+               <center> <a href="bkash.php"><img src="slide_images/bkash.jpg" width="90" height="50">
+			   <a href="Paypal.php"><img src="slide_images/paypal.jpg" width="90" height="50">
+			   <a href="DebitCard.php"><img src="slide_images/masterCard.png" width="90" height="50">
+			   <a href="CreditCard.php"><img src="slide_images/visa.png" width="90" height="50">
+			   <a href="#"><img src="slide_images/cash.png" width="90" height="50"></center>
                         
                 
+
+    <p><br/></p>
+	<p><br/></p>
+	<p><br/></p>
+<!-------------------------------------footer------------------------------------------------------->
+
+
 <div class="card">
 
 <div class="panel-footer">
 								
-
+  <ul style="list-style-type:none" >
+  <center>
+  <div class="row">
+			
+    <div class="col-md-3" >
+  <li><style="text-decoration:none"><h4>Our Services:</h4></li>
+  <li><a href="formalin.php" style="text-decoration:none">Live formalin detection</a></li></li>
+  <li><a href="contact_us.php" style="text-decoration:none">Contact Us</a></li></li>
+  <li><a href="faq.php" style="text-decoration:none">FAQ</a></li></li>
+  <li><a href="about_us.html" style="text-decoration:none">About Us</a></li></li>
+  </br>
+  </div>
+   <div class="col-md-3" >
+  <li><style="text-decoration:none"><h4>Our Products:</h4></li>
+  <li><a href="phome.php" style="text-decoration:none">Fruits</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Vegetables</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Baverages</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Gift Basket</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Dairy</a></li>
+  <li><a href="phome.php" style="text-decoration:none">Packages</a></li>
+  </br>
+  </div>
+  <div class="col-md-6" >
+   <li><style="text-decoration:none"><h4>Payment Options:</h4></li></br>
+  <li><span style="font-size: 10px; font-weight:bold; display: inline-flex;vertical-align: super; width: 50px">CASH ON DELIVERY</span>&nbsp;&nbsp;<img src="slide_images/bkash.png">&nbsp;&nbsp;<img src="slide_images/rocket.png">&nbsp;&nbsp;<img src="slide_images/ucash.png">  </li>
+  </center>
+  </div>
+  </div>
+  </div>
   <div class="panel-footer"><center><img src="copyr.png" height="15px" width="15px">&nbsp;<img src="freshyFood.ico" height="15px" width="15px">&nbsp;Freshy Food&nbsp;All rights reserved</center></div>
 </div>
+	
+<!------------------live chat--------------------->
+	<?php include 'chat.php';?>
+	<!------------------//live chat--------------------->
+
 
 	
 </body>
